@@ -56,7 +56,7 @@ int main(){
 }
 ```
 #### Output:
-<img width="961" height="390" alt="Image" src="https://github.com/user-attachments/assets/2fe09fe9-f80d-4995-89db-69df6039e8a2" />
+<img width="895" height="168" alt="Image" src="https://github.com/user-attachments/assets/14bac072-b604-49f1-a3f5-9a8400aaff76" />
 
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
