@@ -7,31 +7,27 @@ bebufo
 
 ## Guided 
 
-### 1. [Nama Topik]
+### 1. [Percabangan]
 
 ```C++
 #include <iostream>
 using namespace std;
 
 int main(){
-    float a;
-    float b;
+int angka1 = 10;
+int angka2 = 20;
 
-    cout << "masukan angka: ";
-    cin >> a;
-    cout << "masukan angka: ";
-    cin >> b;
-
-    
-    cout << "a+b = " << (a+b) <<endl;
-    cout << "a-b = " << (a-b) <<endl;
-    cout << "a*b = " << (a*b) <<endl;
-    cout << "a/b = " << (a/b) <<endl;
-
-    return 0;
+if (angka1 > angka2) {
+    cout << "angka1 lebih besar dari angka2" << endl;
+}else if (angka1 < angka2 ) {
+    cout << "angka1 lebih kecil dari angka2" << endl;
+}else {
+     cout << "angka1 samadengan angka2" << endl; 
 }
 
-```
+return 0;
+}
+
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
 ## Unguided 
