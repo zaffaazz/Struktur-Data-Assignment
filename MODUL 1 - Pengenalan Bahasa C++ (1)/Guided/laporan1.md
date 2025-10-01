@@ -164,4 +164,5 @@ Program diatas menjelaskan tentang sebuah program untuk mencetak sebuah segitiga
 Loop yang ketiga digunakan untuk mencetak angka secara menurun dari nilai i sampai 1, lalu meninputkan bintang dibagian tengah, lalau Loop yang keempat digunakan untuk mencetak angka secara naik dari 1 sampai i. Jadi pada program diatas menjelsakan bagaimana cara looping atau perulangan terjadi sampai terbentuk sebuah segitiga
 
 ## Referensi
-[1] I. Holm, Narrator, and J. Fullerton-Smith, Producer, How to Build a Human [DVD]. London: BBC; 2002.
+[1] A. Ma’arif, Dasar Pemrograman Bahasa C++. Yogyakarta: Universitas Ahmad Dahlan, 2022. [Online]. Available: https://eprints.uad.ac.id/32726/
+[2] Petani Kode, “Tutorial Pemrograman C++ untuk Pemula”. [Online]. Available: https://www.petanikode.com/tutorial/c++/
