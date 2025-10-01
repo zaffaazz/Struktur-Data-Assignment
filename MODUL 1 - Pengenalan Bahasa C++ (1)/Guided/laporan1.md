@@ -71,5 +71,52 @@ Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktika
 ## Kesimpulan
 Ringkasan dan interpretasi pandangan kalia dari hasil praktikum dan pembelajaran yang didapat[1].
 
+### 1. [Soal]
+
+```C++
+#include <iostream>
+using namespace std;
+
+string angka(int n) {
+    string satuan[] = {"nol", "satu", "dua", "tiga", "empat",
+                       "lima", "enam", "tujuh", "delapan", "sembilan",
+                       "sepuluh", "sebelas", "dua belas", "tiga belas",
+                       "empat belas", "lima belas", "enam belas",
+                       "tujuh belas", "delapan belas", "sembilan belas"};
+
+    string puluhan[] = {"dua puluh", "tiga puluh", "empat puluh",
+                        "lima puluh", "enam puluh", "tujuh puluh",
+                        "delapan puluh", "sembilan puluh"};
+
+    if (n < 20) {
+        return satuan[n];
+    } else if (n < 100) {
+        int p = n / 10; // untuk mencari puluhan
+        int s = n % 10; // untuk mencari satuan
+        if (s == 0)
+            return puluhan[p - 2]; // agar sesuai dengan index dari sting puluhan
+        else 
+            return puluhan[p - 2] +  " " + satuan[s]; 
+    } else if (n == 100) {
+        return "seratus";
+    } else {
+        return "Error";
+    }
+}
+
+int main() {
+    int a;
+    cout << "Masukkan angka : ";
+    cin >> a;
+
+    if (a >= 0 && a <= 100) {
+        cout << "= " << angka(a) << endl;
+    } else {
+        cout << "Error" << endl;
+    }
+
+    return 0;
+}
+
 ## Referensi
 [1] I. Holm, Narrator, and J. Fullerton-Smith, Producer, How to Build a Human [DVD]. London: BBC; 2002.
