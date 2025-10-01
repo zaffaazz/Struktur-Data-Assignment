@@ -2,9 +2,7 @@
 <p align="center">Zaffa Azzahra </p>
 
 ## Dasar Teori
- 
-bebufo
-
+ C++ merupakan salah satu bahasa pemrograman yang dikembangkan oleh Bjarne Stroustrup pada tahun 1979. Awalnya C++ merupakan pengembangan dari bahasa C, kemudian ditambahkan fitur baru seperti pemrograman berorientasi objek \(OOP), sehingga lebih fleksibel dan banyak digunakan dalam pembutan sebuah aplikasi. Dalam mempelajari C++, ada beberapa struktur dasar yang harus diketahui:#include <iostream>  digunakan untuk mengakses input/output ,using namespace std digunakan agar kita tidak perlu menuliskan lagi awalan std:: setiap kali memanggil fungsi , int main() merupakan fungsi utama program, return 0 diakhir sebagai berentinya program, cout digunakan untuk menampilkan output ke layar, cin digunakan untuk menerima input dari pengguna. Selain itu, dasar lain yang penting dipahami dalam C++ adalah variabel dan tipe data seperti angka (int), pecahan (float), teks (string), karakter (char), dan logika (bool), Operator Aritmatika seperti +, -, *, /, % untuk melakukan operasi perhitungan, Percabangan ada  if, else, switch, Perulangan (Looping) seperti for, while. dan Array untuk menyimpan sekumpulan data dengan tipe yang sama.
 ## Guided 
 
 ### 1. [Percabangan]
@@ -162,8 +160,8 @@ Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktika
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/c6a168e6-e9f9-497a-8e08-cbcaaaefdb4e" />
 
 ## Kesimpulan
-Penjelasan diatas tentang bagaimana bilangan float (koma) bisa dihitung dalam operasi aritmatika dengan format type data float dan sesuai dengan program yang sudah dibuat akan diproses dengan menggunakan kode yang tersedia yaitu ada pembagian, pengurangan, pembagian, perkalian, tapi dalam kode diatas apabila bilangan dibagi 0 maka outputnya adalah "inf" karena bilangan apapun yang dibagi 0 = infinity.
-
+Program diatas menjelaskan tentang sebuah program untuk mencetak sebuah segitiga terbalik dengan mengggunakan lopp pada lopp yang pertama akan mencetak baris sesuai dengan inputanya, Loop yang kedua untuk mencetak spasi di awal baris agar pola segitiga yang dihasilkan menjadi rata ke kanan, 
+Loop yang ketiga digunakan untuk mencetak angka secara menurun dari nilai i sampai 1, lalu meninputkan bintang dibagian tengah, lalau Loop yang keempat digunakan untuk mencetak angka secara naik dari 1 sampai i. Jadi pada program diatas menjelsakan bagaimana cara looping atau perulangan terjadi sampai terbentuk sebuah segitiga
 
 ## Referensi
 [1] I. Holm, Narrator, and J. Fullerton-Smith, Producer, How to Build a Human [DVD]. London: BBC; 2002.
