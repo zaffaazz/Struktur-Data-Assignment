@@ -2,8 +2,8 @@
 <p align="center">Zaffa Azzahra </p>
 
 ## Dasar Teori
-
-Berikan penjelasan teori terkait materi modul ini dengan bahasa anda sendiri serta susunan yang terstruktur per topiknya.
+ 
+bebufo
 
 ## Guided 
 
@@ -66,8 +66,9 @@ Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktika
 
 #### Full code Screenshot:
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/db7c4c01-a601-4a62-b795-ed2462f2ec3c" />
+
 ## Kesimpulan
-Ringkasan dan interpretasi pandangan kalia dari hasil praktikum dan pembelajaran yang didapat[1].
+Penjelasan diatas tentang bagaimana bilangan float (koma) bisa dihitung dalam operasi aritmatika dengan format type data float dan sesuai dengan program yang sudah dibuat akan diproses dengan menggunakan kode yang tersedia yaitu ada pembagian, pengurangan, pembagian, perkalian, tapi dalam kode diatas apabila bilangan dibagi 0 maka outputnya adalah "inf" karena bilangan apapun yang dibagi 0 = infinity.
 
 ### 2. [Soal]
 
@@ -125,8 +126,7 @@ Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktika
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/b0a4bd78-aa98-4ece-a9a1-01507b3a7087" />
 
 ## Kesimpulan
-Ringkasan dan interpretasi pandangan kalia dari hasil praktikum dan pembelajaran yang didapat[1].
-
+Dari program diatas merupakan program dengan type data string dimana kita akan mengubah angka menejadi bilangan string dengan menggunakan bantuan array kita isi dengan huruf angka dari mulai satuan dan puluhan karena kita hanya mengubah angka dari 0-100 dan dengan bantuan operasi aritmatika yaitu pembagian untuk menggetahui puluhan atau angka awal bilangan tersebut dengan membagiya dengan angka 10 dan untuk mencari angka satuan dengan menggunakan modulus yaitu sisa pembagi dari bilangan n tapi ini jika bilangan n > 20 sampai n < 100 dan untuk f (s == 0) return puluhan[p - 2] ini jika yang dicari bilangan yang dibelakangnya nol jadi saya tulis p-2 karena agar sesuai dengan index yang sudah dibuat pada array itu index dari 0-9 jika saya tidak menuliskan dengan -2 maka program akan menghasilkan output berupa index 2 dibawahnya semisal kalo saya inputkan 20 maka outputnya 40, jadi saya -2 karena sesuai dengan index 20 yaitu index ke 0.
 
 ## Referensi
 [1] I. Holm, Narrator, and J. Fullerton-Smith, Producer, How to Build a Human [DVD]. London: BBC; 2002.
