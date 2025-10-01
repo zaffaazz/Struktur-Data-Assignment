@@ -153,5 +153,17 @@ int main() {
     return 0;
 }
 
+```
+#### Output:
+<img width="954" height="259" alt="Image" src="https://github.com/user-attachments/assets/9eb428ae-c784-48de-b1b6-e1bcbc0314a8" />
+Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
+
+#### Full code Screenshot:
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/b0a4bd78-aa98-4ece-a9a1-01507b3a7087" />
+
+## Kesimpulan
+Penjelasan diatas tentang bagaimana bilangan float (koma) bisa dihitung dalam operasi aritmatika dengan format type data float dan sesuai dengan program yang sudah dibuat akan diproses dengan menggunakan kode yang tersedia yaitu ada pembagian, pengurangan, pembagian, perkalian, tapi dalam kode diatas apabila bilangan dibagi 0 maka outputnya adalah "inf" karena bilangan apapun yang dibagi 0 = infinity.
+
+
 ## Referensi
 [1] I. Holm, Narrator, and J. Fullerton-Smith, Producer, How to Build a Human [DVD]. London: BBC; 2002.
