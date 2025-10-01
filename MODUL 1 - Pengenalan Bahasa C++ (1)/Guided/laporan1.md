@@ -128,5 +128,34 @@ Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktika
 ## Kesimpulan
 Dari program diatas merupakan program dengan type data string dimana kita akan mengubah angka menejadi bilangan string dengan menggunakan bantuan array kita isi dengan huruf angka dari mulai satuan dan puluhan karena kita hanya mengubah angka dari 0-100 dan dengan bantuan operasi aritmatika yaitu pembagian untuk menggetahui puluhan atau angka awal bilangan tersebut dengan membagiya dengan angka 10 dan untuk mencari angka satuan dengan menggunakan modulus yaitu sisa pembagi dari bilangan n tapi ini jika bilangan n > 20 sampai n < 100 dan untuk f (s == 0) return puluhan[p - 2] ini jika yang dicari bilangan yang dibelakangnya nol jadi saya tulis p-2 karena agar sesuai dengan index yang sudah dibuat pada array itu index dari 0-9 jika saya tidak menuliskan dengan -2 maka program akan menghasilkan output berupa index 2 dibawahnya semisal kalo saya inputkan 20 maka outputnya 40, jadi saya -2 karena sesuai dengan index 20 yaitu index ke 0.
 
+### 3. [Soal]
+
+```C++
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Input: ";
+    cin >> n;
+
+    for (int i = n; i >= 0; i--) {
+        for (int s = 0; s < (n - i); s++) {
+            cout << "  ";
+        }
+        for (int j = i; j >= 1; j--) {
+            cout << j << " ";
+        }
+        cout << "* ";
+        for (int j = 1; j <= i; j++) {
+            cout << j << " ";
+        }
+
+        cout << endl; 
+    }
+
+    return 0;
+}
+
 ## Referensi
 [1] I. Holm, Narrator, and J. Fullerton-Smith, Producer, How to Build a Human [DVD]. London: BBC; 2002.
