@@ -34,7 +34,11 @@ int main() {
 }
 ```
 #### Output:
-![240302_00h00m06s_screenshot](https://github.com/suxeno/Struktur-Data-Assignment/assets/111122086/6d1727a8-fb77-4ecf-81ff-5de9386686b7)
+[](
+
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/1a76f67d-1d6d-4d2f-838c-e3cf0de04a6d" />
+
+)
 
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
