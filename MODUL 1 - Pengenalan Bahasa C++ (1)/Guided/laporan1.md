@@ -65,8 +65,7 @@ int main(){
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
 #### Full code Screenshot:
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/d74eca32-2d6b-483c-8c90-a648936c4d31" />
-
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/db7c4c01-a601-4a62-b795-ed2462f2ec3c" />
 ## Kesimpulan
 Ringkasan dan interpretasi pandangan kalia dari hasil praktikum dan pembelajaran yang didapat[1].
 
