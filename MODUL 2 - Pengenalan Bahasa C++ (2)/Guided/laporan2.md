@@ -2,7 +2,7 @@
 <p align="center">Zaffa Azzahra </p>
 
 ## Dasar Teori
- C++ merupakan salah satu bahasa pemrograman yang dikembangkan oleh Bjarne Stroustrup pada tahun 1979. Awalnya C++ merupakan pengembangan dari bahasa C, kemudian ditambahkan fitur baru seperti pemrograman berorientasi objek \(OOP), sehingga lebih fleksibel dan banyak digunakan dalam pembutan sebuah aplikasi. Dalam mempelajari C++, ada beberapa struktur dasar yang harus diketahui:#include <iostream>  digunakan untuk mengakses input/output ,using namespace std digunakan agar kita tidak perlu menuliskan lagi awalan std:: setiap kali memanggil fungsi , int main() merupakan fungsi utama program, return 0 diakhir sebagai berentinya program, cout digunakan untuk menampilkan output ke layar, cin digunakan untuk menerima input dari pengguna. Selain itu, dasar lain yang penting dipahami dalam C++ adalah variabel dan tipe data seperti angka (int), pecahan (float), teks (string), karakter (char), dan logika (bool), Operator Aritmatika seperti +, -, *, /, % untuk melakukan operasi perhitungan, Percabangan ada  if, else, switch, Perulangan (Looping) seperti for, while. dan Array untuk menyimpan sekumpulan data dengan tipe yang sama.
+ C++ merupakan salah satu bahasa pemrograman yang dikembangkan oleh Bjarne Stroustrup pada tahun 1979. Awalnya C++ merupakan pengembangan dari bahasa C, kemudian ditambahkan fitur baru seperti pemrograman berorientasi objek \(OOP), sehingga lebih fleksibel dan banyak digunakan dalam pembutan sebuah aplikasi.Dalam pemrograman C++ terdapat salah satu struktur data yaitu array dan procedur, array sendiri adalah struktur data yang digunakan untuk menyimpan sekumpulan nilai dengan tipe data yang sama di dalam satu variabel, Sedangkan procedur adalah bagian dari program (subprogram) yang berisi sekumpulan perintah untuk melakukan suatu tugas tertentu, tetapi tidak mengembalikan nilai, dalam C++, prosedur disebut dengan void yang artinya fungsi tersebut hanya menjalankan sebuah perintah.
 ## Guided 
 ### 1. [Procedur]
 
@@ -114,8 +114,7 @@ Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktika
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/10cec66c-d3ca-4cbc-82fd-c6362b1a8c22" />
 
 ## Kesimpulan
-Penjelasan diatas tentang bagaimana bilangan float (koma) bisa dihitung dalam operasi aritmatika dengan format type data float dan sesuai dengan program yang sudah dibuat akan diproses dengan menggunakan kode yang tersedia yaitu ada pembagian, pengurangan, pembagian, perkalian, tapi dalam kode diatas apabila bilangan dibagi 0 maka outputnya adalah "inf" karena bilangan apapun yang dibagi 0 = infinity.
-
+Program diatas menjelaskan tentang penjumlahan, pengurangan, perkalian dua buah matriks 3x3 dimana dalam porgram tersebut menggunakan array 2 dimensi untuk membuat sebuah matriks 3x3 dana menggunakan perulangan untuk meghitung operasi aritmatika tersebut. Pada program diatas terdapat dekralasi C[3][3] untuk menyimpan hasil dari operasi aritmatika dua matriks.Selanjutnya pada perulangan terapat dekralasi i disini untuk menghitung  baris dalam sebuah matriks dan j untuk menghitung kolom pada matriks, namum untuk menghitung perkalian antara dua matriks terdapat dekralasi k untuk menghitung hasil kali antara elemen baris ke-i dari matriks A dengan elemen kolom ke-j dari matriks B, kemudian dijumlahkan.
 ### 2. [Soal]
 
 ```C++
@@ -176,7 +175,7 @@ Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktika
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/3a1c9fdd-ca1c-4230-958d-078d2909354b" />
 
 ## Kesimpulan
-Dari program diatas merupakan program dengan type data string dimana kita akan mengubah angka menejadi bilangan string dengan menggunakan bantuan array kita isi dengan huruf angka dari mulai satuan dan puluhan karena kita hanya mengubah angka dari 0-100 dan dengan bantuan operasi aritmatika yaitu pembagian untuk menggetahui puluhan atau angka awal bilangan tersebut dengan membagiya dengan angka 10 dan untuk mencari angka satuan dengan menggunakan modulus yaitu sisa pembagi dari bilangan n tapi ini jika bilangan n > 20 sampai n < 100 dan untuk f (s == 0) return puluhan[p - 2] ini jika yang dicari bilangan yang dibelakangnya nol jadi saya tulis p-2 karena agar sesuai dengan index yang sudah dibuat pada array itu index dari 0-9 jika saya tidak menuliskan dengan -2 maka program akan menghasilkan output berupa index 2 dibawahnya semisal kalo saya inputkan 20 maka outputnya 40, jadi saya -2 karena sesuai dengan index 20 yaitu index ke 0.
+Program diatas menjelaskan tentang sebuah subprogram yaitu procedur untuk mencari pointer dan refrence dan menukar nilai dalam tiga buah variabel, dimana pointer sendiri digunakan untuk mencari sebuah alamat memeory dalam sebuah program pada program diatas mencari alamat memrory program nilai a tersimpan dan menukar nilai a,, b, c, sedangkan refrence menukar value antara ketinganya dan pada program diatas nilai a diganti menjadi 50.
 
 ### 3. [Soal]
 
@@ -270,9 +269,7 @@ Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktika
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/c6a168e6-e9f9-497a-8e08-cbcaaaefdb4e" />
 
 ## Kesimpulan
-Program diatas menjelaskan tentang sebuah program untuk mencetak sebuah segitiga terbalik dengan mengggunakan lopp pada lopp yang pertama akan mencetak baris sesuai dengan inputanya, Loop yang kedua untuk mencetak spasi di awal baris agar pola segitiga yang dihasilkan menjadi rata ke kanan, 
-Loop yang ketiga digunakan untuk mencetak angka secara menurun dari nilai i sampai 1, lalu meninputkan bintang dibagian tengah, lalau Loop yang keempat digunakan untuk mencetak angka secara naik dari 1 sampai i. Jadi pada program diatas menjelsakan bagaimana cara looping atau perulangan terjadi sampai terbentuk sebuah segitiga
-
+Program diatas menjelaskan tentang sebuah program untuk mencari nilai maksimum, minumum, dan rata-rata dalam sebuah array 1 dimensi, dimana program diatas menggunkaan function untuk mencari nilai maksimum dan minimum dan procedur untuk mencari rata-rata. Pada program ini juga menggunakan switch case untuk membuat tampilan untuk memlilih pilihan untuk menampilkan nilai maksimum, minimum, rata-rata
 ## Referensi
-[1] A. Ma’arif, Dasar Pemrograman Bahasa C++. Yogyakarta: Universitas Ahmad Dahlan, 2022. [Online]. Available: https://eprints.uad.ac.id/32726/
-[2] Petani Kode, “Tutorial Pemrograman C++ untuk Pemula”. [Online]. Available: https://www.petanikode.com/tutorial/c++/
+[1] “How to get largest and smallest number in an Array?”, GeeksforGeeks. [Online]. Available: https://www.geeksforgeeks.org/how-to-get-largest-and-smallest-number-in-an-array/
+[2] “C++ Program to Perform Matrix Multiplication”, Tutorialspoint. [Online]. Available: https://www.tutorialspoint.com/cplusplus-program-to-perform-matrix-multiplication
