@@ -122,43 +122,47 @@ Penjelasan diatas tentang bagaimana bilangan float (koma) bisa dihitung dalam op
 #include <iostream>
 using namespace std;
 
-string angka(int n) {
-    string satuan[] = {"nol", "satu", "dua", "tiga", "empat",
-                       "lima", "enam", "tujuh", "delapan", "sembilan",
-                       "sepuluh", "sebelas", "dua belas", "tiga belas",
-                       "empat belas", "lima belas", "enam belas",
-                       "tujuh belas", "delapan belas", "sembilan belas"};
-
-    string puluhan[] = {"dua puluh", "tiga puluh", "empat puluh",
-                        "lima puluh", "enam puluh", "tujuh puluh",
-                        "delapan puluh", "sembilan puluh"};
-
-    if (n < 20) {
-        return satuan[n];
-    } else if (n < 100) {
-        int p = n / 10; // untuk mencari puluhan
-        int s = n % 10; // untuk mencari satuan
-        if (s == 0)
-            return puluhan[p - 2]; // agar sesuai dengan index dari sting puluhan
-        else 
-            return puluhan[p - 2] +  " " + satuan[s]; 
-    } else if (n == 100) {
-        return "seratus";
-    } else {
-        return "Error";
-    }
+void tukar(int *x, int*y, int*z){
+    int temp;
+    temp = *x;
+    *x = *y;
+    *y = *z;
+    *z = temp;
 }
+void tukarRef(int &x, int &y, int &z) {
+    int temp;
+    temp = x;
+    x = y;
+    y = z;
+    z = temp;
+}
+int main(){
+    int a = 20, b =30, c = 40;
+    int *ptr;
+    ptr = &a;
 
-int main() {
-    int a;
-    cout << "Masukkan angka : ";
-    cin >> a;
+    cout << "Value of a: " << a << endl;
+    cout << "Address of a: " << &a << endl;
+    cout << "Value stored in ptr (address of a): " << ptr << endl;
+    cout << "Value pointed to by ptr: " << *ptr << endl;
 
-    if (a >= 0 && a <= 100) {
-        cout << "= " << angka(a) << endl;
-    } else {
-        cout << "Error" << endl;
-    }
+    tukar (&a,&b,&c);
+    cout << "After swaping, value of a=" << a << " and b=" << b << " and c=" << c << endl;
+   
+   cout << "\n=== Bagian Reference ===" << endl;
+    int& ref=a;
+    cout << "Nilai a: " << a << endl;
+    cout << "Alamat a(&a): " << &a << endl;
+    cout << "Nilai ref (alias a): " << ref << endl;
+    cout << "Alamat ref (&ref): " << &ref << endl;
+
+    ref = 50;
+    cout << "\nSetelah ref=50; " << endl;
+    cout << "Nilai a: " << a << endl;
+    cout << "Nilai ref: " << ref << endl;
+
+    tukar (&a,&b,&c);
+    cout << "Setelah tukar (reference): a=" << a << ", b=" << b << ", c=" << c << endl;
 
     return 0;
 }
@@ -179,29 +183,83 @@ Dari program diatas merupakan program dengan type data string dimana kita akan m
 ```C++
 #include <iostream>
 using namespace std;
-
-int main() {
-    int n;
-    cout << "Input: ";
-    cin >> n;
-
-    for (int i = n; i >= 0; i--) {
-        for (int s = 0; s < (n - i); s++) {
-            cout << "  ";
-        }
-        for (int j = i; j >= 1; j--) {
-            cout << j << " ";
-        }
-        cout << "* ";
-        for (int j = 1; j <= i; j++) {
-            cout << j << " ";
-        }
-
-        cout << endl; 
+ 
+int cariMaksimum(int arr[], int n){
+    int max = arr[0];
+    for (int i = 1; i < n; i++) {
+        if (arr[i] > max)
+            max = arr[i];
     }
+    return max;
+}
+int cariMinimum(int arr[], int n){
+    int min = arr[0];
+    for (int i = 1; i < n; i++) {
+        if (arr[i] < min)
+            min = arr[i];
+    }
+    return min;
+}
+void hitungRataRata(int arr[], int n){
+    float total = 0;
+    for (int i = 0; i < n; i++) {
+        total += arr[i];
+    }
+    float rata = total / n;
+    cout << "Nilai rata-rata: " << rata << endl;
+}
+int main(){
+    int n =10;
+    int pilihan;
+    int arrA[10] = {11, 8, 5, 7, 12, 26, 3, 54, 33, 55};
+    cout << "Array 1 Dimensi:"<< endl;
+    for (int i = 0; i < 10; i++){
+        cout << "arrA[" << i << "] = "<< arrA[i] << endl;
+    }
+do{
+cout << "\n--- Menu Program Array ---\n";
+cout << "1. Tampilkan isi array\n";
+cout << "2. Cari nilai maksimum\n";
+cout << "3. Cari nilai minimum\n";
+cout << "4. Hitung nilai rata - rata\n";
+cout << "5. Keluar\n";
+cout << "Pilih menu (1-5): ";
+cin >> pilihan;
+
+    switch (pilihan) {
+            case 1:
+                cout << "Isi array: ";
+                for (int i = 0; i < n; i++) {
+                    cout << arrA[i] << " ";
+                }
+                cout << endl;
+                break;
+
+            case 2:
+                cout << "Nilai maksimum: " << cariMaksimum(arrA, n) << endl;
+                break;
+
+            case 3:
+                cout << "Nilai minimum: " << cariMinimum(arrA, n) << endl;
+                break;
+
+            case 4:
+                hitungRataRata(arrA, n);
+                break;
+
+            case 5:
+                cout << "Program selesai.\n";
+                break;
+
+            default:
+                cout << "Pilihan tidak valid.\n";
+        }
+
+    } while (pilihan != 5);
 
     return 0;
 }
+
 
 ```
 #### Output:
