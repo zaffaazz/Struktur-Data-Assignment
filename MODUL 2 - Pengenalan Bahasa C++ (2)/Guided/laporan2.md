@@ -106,7 +106,7 @@ int C[3][3];
 
 ```
 #### Output:
-<img width="961" height="390" alt="Image" src="https://github.com/user-attachments/assets/89098826-0423-488b-bdd4-120f50b5211c" />
+<img width="1295" height="510" alt="Image" src="https://github.com/user-attachments/assets/9f722f95-6926-4ea5-9057-af70801704e3" />
 
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
