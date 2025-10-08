@@ -62,6 +62,8 @@ int C[3][3];
             C[i][j] = matriksA[i][j] + matriksB[i][j];
         }
     }
+
+    // hasil
     cout << "\nHasil Penjumlahan Matriks (A + B):" << endl;
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++) {
@@ -76,7 +78,9 @@ int C[3][3];
             C[i][j] = matriksA[i][j] - matriksB[i][j];
         }
     }
-    cout << "\nHasil Penjumlahan Matriks (A - B):" << endl;
+
+    // hasil
+    cout << "\nHasil Pengurangan Matriks (A - B):" << endl;
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++) {
             cout << C[i][j] << "\t";
@@ -90,6 +94,7 @@ int C[3][3];
             for (int k = 0; k < 3; k++)
                 C[i][j] += matriksA[i][k] * matriksB[k][j];
         }
+        // hasil
     cout << "\nHasil Perkalian Matriks (A x B):\n";
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++) cout << C[i][j] << "\t";
