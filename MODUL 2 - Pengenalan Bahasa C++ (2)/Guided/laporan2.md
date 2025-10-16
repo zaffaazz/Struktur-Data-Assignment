@@ -266,10 +266,11 @@ cin >> pilihan;
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
 #### Full code Screenshot:
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/c6a168e6-e9f9-497a-8e08-cbcaaaefdb4e" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/0e3b99f5-984b-481c-82d0-11d53584e145" />
 
 ## Kesimpulan
 Program diatas menjelaskan tentang sebuah program untuk mencari nilai maksimum, minumum, dan rata-rata dalam sebuah array 1 dimensi, dimana program diatas menggunkaan function untuk mencari nilai maksimum dan minimum dan procedur untuk mencari rata-rata. Pada program ini juga menggunakan switch case untuk membuat tampilan untuk memlilih pilihan untuk menampilkan nilai maksimum, minimum, rata-rata
+
 ## Referensi
 [1] “How to get largest and smallest number in an Array?”, GeeksforGeeks. [Online]. Available: https://www.geeksforgeeks.org/how-to-get-largest-and-smallest-number-in-an-array/
 [2] “C++ Program to Perform Matrix Multiplication”, Tutorialspoint. [Online]. Available: https://www.tutorialspoint.com/cplusplus-program-to-perform-matrix-multiplication
