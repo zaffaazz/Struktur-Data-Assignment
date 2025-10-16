@@ -86,12 +86,13 @@ int main() {
 }
 ```
 #### Output:
-<img width="961" height="390" alt="Image" src="https://github.com/user-attachments/assets/89098826-0423-488b-bdd4-120f50b5211c" />
+
+<img width="1261" height="865" alt="Image" src="https://github.com/user-attachments/assets/5102e65c-537f-430f-b879-3a428519d387" />
 
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
 #### Full code Screenshot:
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/db7c4c01-a601-4a62-b795-ed2462f2ec3c" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/e653bf9c-c74a-4a44-8fca-cfe02818258a" />
 
 ## Kesimpulan
 Penjelasan diatas tentang sebuah program untuk menghitung nilai akhir ari data mahasiwa dengan array dan procedure. Arraynya sendiri hanya sampai 10 anak jadi apabila menginputkan lebih dari 10 maka program akan secara otomatis akan mengoutputkan 10 data saja, dengan menggunakan fungsi untuk mneghitung nlai akhir mahasiswa, lalu procedure untuk menginputkan data mahasiswa dari mulai nim, nama, nilai uts, uas, tugas.
