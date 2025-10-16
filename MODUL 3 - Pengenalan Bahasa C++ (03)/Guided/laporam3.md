@@ -34,21 +34,53 @@ Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktika
 
 ```C++
 #include <iostream>
+#include <string>
 using namespace std;
 
-int main(){
-    float a;
-    float b;
+struct dataMahasiswa {
+    string nama;
+    char nim[10];
+    float uts, uas, tugas, nilaiakhir;
+};
 
-    cout << "masukan angka: ";
-    cin >> a;
-    cout << "masukan angka: ";
-    cin >> b;
+void mahasiswa(dataMahasiswa &m) {
+    cout << "Masukkan nama: ";
+    cin >> m.nama;
+    cout << "Masukkan NIM: ";
+    cin >> m.nim;
+    cout << "Masukkan nilai UTS: ";
+    cin >> m.uts;
+    cout << "Masukkan nilai UAS: ";
+    cin >> m.uas;
+    cout << "Masukkan nilai Tugas: ";
+    cin >> m.tugas;
+}
 
-    cout << "a+b = " << (a+b) <<endl;
-    cout << "a-b = " << (a-b) <<endl;
-    cout << "a*b = " << (a*b) <<endl;
-    cout << "a/b = " << (a/b) <<endl;
+float nilai_akhir(dataMahasiswa m) {
+    return (0.3 * m.uts) + (0.4 * m.uas) + (0.3 * m.tugas);
+}
+
+int main() {
+    dataMahasiswa mhs[10];
+    int jum;
+
+    cout << "Masukkan jumlah mahasiswa: ";
+    cin >> jum;
+
+    if (jum > 10) jum = 10;
+
+    for (int i = 0; i < jum; i++) {
+        cout << "\nData mahasiswa ke-" << i + 1 << endl;
+        mahasiswa(mhs[i]);
+        mhs[i].nilaiakhir = nilai_akhir(mhs[i]);
+    }
+
+    cout << "\n== Daftar Nilai ==" << endl;
+    for (int i = 0; i < jum; i++) {
+        cout << i + 1 << ". " << mhs[i].nama
+             << " (" << mhs[i].nim << ") "
+             << "Nilai Akhir: " << mhs[i].nilaiakhir << endl;
+    }
 
     return 0;
 }
@@ -62,8 +94,7 @@ Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktika
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/db7c4c01-a601-4a62-b795-ed2462f2ec3c" />
 
 ## Kesimpulan
-Penjelasan diatas tentang bagaimana bilangan float (koma) bisa dihitung dalam operasi aritmatika dengan format type data float dan sesuai dengan program yang sudah dibuat akan diproses dengan menggunakan kode yang tersedia yaitu ada pembagian, pengurangan, pembagian, perkalian, tapi dalam kode diatas apabila bilangan dibagi 0 maka outputnya adalah "inf" karena bilangan apapun yang dibagi 0 = infinity.
-
+Penjelasan diatas tentang sebuah program untuk menghitung nilai akhir ari data mahasiwa dengan array dan procedure. Arraynya sendiri hanya sampai 10 anak jadi apabila menginputkan lebih dari 10 maka program akan secara otomatis akan mengoutputkan 10 data saja, dengan menggunakan fungsi untuk mneghitung nlai akhir mahasiswa, lalu procedure untuk menginputkan data mahasiswa dari mulai nim, nama, nilai uts, uas, tugas.
 ### 2. [Soal]
 
 ```C++
@@ -128,25 +159,66 @@ Dari program diatas merupakan program dengan type data string dimana kita akan m
 #include <iostream>
 using namespace std;
 
-int main() {
-    int n;
-    cout << "Input: ";
-    cin >> n;
-
-    for (int i = n; i >= 0; i--) {
-        for (int s = 0; s < (n - i); s++) {
-            cout << "  ";
+void tampilArray(int A[3][3]) {
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            cout << A[i][j] << "\t";
         }
-        for (int j = i; j >= 1; j--) {
-            cout << j << " ";
-        }
-        cout << "* ";
-        for (int j = 1; j <= i; j++) {
-            cout << j << " ";
-        }
-
-        cout << endl; 
+        cout << endl;
     }
+}
+
+void tukarPosisi(int A[3][3], int B[3][3], int baris, int kolom) {
+    int temp = A[baris][kolom];
+    A[baris][kolom] = B[baris][kolom];
+    B[baris][kolom] = temp;
+}
+
+void tukarPointer(int *p1, int *p2) {
+    int temp = *p1;
+    *p1 = *p2;
+    *p2 = temp;
+}
+
+int main() {
+    int A[3][3] = {
+        {1, 2, 3},
+        {4, 5, 6},
+        {7, 8, 9}
+    };
+
+    int B[3][3] = {
+        {9, 8, 7},
+        {6, 5, 4},
+        {3, 2, 1}
+    };
+
+    int *ptr1, *ptr2;
+    int x = 10, y = 20;
+
+    ptr1 = &x;
+    ptr2 = &y;
+
+    cout << "Array A:\n";
+    tampilArray(A);
+    cout << "\nArray B:\n";
+    tampilArray(B);
+
+    cout << "\nMenukar elemen\n";
+    tukarPosisi(A, B, 1, 2);
+
+    cout << "\nArray A setelah ditukar:\n";
+    tampilArray(A);
+    cout << "\nArray B setelah ditukar:\n";
+    tampilArray(B);
+
+    cout << "\nNilai sebelum tukar pointer:\n";
+    cout << "x = " << x << ", y = " << y << endl;
+
+    tukarPointer(ptr1, ptr2);
+
+    cout << "\nNilai setelah tukar pointer:\n";
+    cout << "x = " << x << ", y = " << y << endl;
 
     return 0;
 }
