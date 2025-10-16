@@ -178,7 +178,7 @@ int main() {
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
 #### Full code Screenshot:
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/b0a4bd78-aa98-4ece-a9a1-01507b3a7087" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/98db7c59-dfca-438b-b474-0723b29941e5" />
 
 ## Kesimpulan
 Dari program diatas merupakan program dengan menggunakan ADT untuk menyimpan nama mata pelajaran dan kode mata pelajaran dalam subuah file pelajaran.h berisi deklarasi struktur dan fungsi, kemudian pelajaran.cpp berisi implementasi fungsi create_pelajaran() untuk membuat data dan tampil_pelajaran() untuk menampilkannya, sedangkan main.cpp menggunakan fungsi-fungsi tersebut untuk menampilkan informasi pelajaran.
