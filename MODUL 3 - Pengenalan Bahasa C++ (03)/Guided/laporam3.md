@@ -141,7 +141,6 @@ void tampil_pelajaran(pelajaran pel);
 
 // pelajaran.cpp
 #include <iostream>
-#include <string>  
 #include "pelajaran.h"
 using namespace std;
 
