@@ -2,28 +2,52 @@
 <p align="center">Zaffa Azzahra </p>
 
 ## Dasar Teori
- ADT adalah 
+Abstract Data Type (ADT) adalah tipe data yang didefinisikan berdasarkan nilai dan operasi tanpa memperhatikan cara implementasinya. Dalam C++, ADT dapat dibuat menggunakan struct atau class yang berisi data dan fungsi. ADT memudahkan pengelolaan data agar lebih terstruktur dan modular.
 ## Guided 
 
 ### 1. [ADT]
 
 ```C++
+// mahasiswa.cpp
 #include <iostream>
+#include "mahasiswa.h"
 using namespace std;
 
-int main(){
-int angka1 = 10;
-int angka2 = 20;
-
-if (angka1 > angka2) {
-    cout << "angka1 lebih besar dari angka2" << endl;
-}else if (angka1 < angka2 ) {
-    cout << "angka1 lebih kecil dari angka2" << endl;
-}else {
-     cout << "angka1 samadengan angka2" << endl; 
+void inputMhs(mahasiswa &m) {
+    cout << "Masukkan NIM: ";
+    cin >> m.nim;
+    cout << "Masukkan nilai1: ";
+    cin >> m.nilai1;
+    cout << "Masukkan nilai2: ";
+    cin >> m.nilai2;
 }
 
-return 0;
+float rata2(mahasiswa m) {
+    return (m.nilai1 + m.nilai2) / 2.0;
+}
+// mahasiswa.h
+#ifndef MAHASISWA_H_INCLUDE
+#define MAHASISWA_H_INCLUDE
+
+struct mahasiswa {
+    char nim[10];
+    int nilai1, nilai2;
+};
+
+void inputMhs(mahasiswa &m);
+float rata2(mahasiswa m);
+
+#endif // MAHASISWA_H_INCLUDE
+// main.cpp
+#include <iostream>
+#include "mahasiswa.h"
+using namespace std;
+
+int main() {
+    mahasiswa m;
+    inputMhs(m);
+    cout << "Rata-rata nilai: " << rata2(m) << endl;
+    return 0;
 }
 
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
@@ -242,5 +266,4 @@ Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktika
 Program di atas merupakan program yang menggunakan array dua dimensi dan pointer untuk melakukan pertukaran data. Fungsi tampilArray digunakan untuk menampilkan isi array 3x3, fungsi tukarPosisi digunakan untuk menukarkan elemen pada posisi tertentu antara dua array, dan fungsi tukarPointer digunakan untuk menukarkan nilai dari dua variabel melalui pointer. Program ini menunjukkan penggunaan fungsi, array 2D, dan pointer.
 
 ## Referensi
-[1] A. Ma’arif, Dasar Pemrograman Bahasa C++. Yogyakarta: Universitas Ahmad Dahlan, 2022. [Online]. Available: https://eprints.uad.ac.id/32726/
-[2] Petani Kode, “Tutorial Pemrograman C++ untuk Pemula”. [Online]. Available: https://www.petanikode.com/tutorial/c++/
+[1] P. Morin, Open Data Structures (C++ Edition). [Online]. Available: https://opendatastructures.org/ods-cpp.pdf
