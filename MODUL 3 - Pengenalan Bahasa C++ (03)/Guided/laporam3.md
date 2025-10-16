@@ -98,49 +98,55 @@ Penjelasan diatas tentang sebuah program untuk menghitung nilai akhir ari data m
 ### 2. [Soal]
 
 ```C++
+// pelajaran.h
+#ifndef PELAJARAN_H_INCLUDE
+#define PELAJARAN_H_INCLUDE
+
+#include <string>  
+using namespace std;
+struct pelajaran {
+    string namaMapel;
+    string kodeMapel;
+};
+
+pelajaran create_pelajaran(string namapel, string kodepel);
+void tampil_pelajaran(pelajaran pel);
+
+#endif
+
+// pelajaran.cpp
 #include <iostream>
+#include <string>  
+#include "pelajaran.h"
 using namespace std;
 
-string angka(int n) {
-    string satuan[] = {"nol", "satu", "dua", "tiga", "empat",
-                       "lima", "enam", "tujuh", "delapan", "sembilan",
-                       "sepuluh", "sebelas", "dua belas", "tiga belas",
-                       "empat belas", "lima belas", "enam belas",
-                       "tujuh belas", "delapan belas", "sembilan belas"};
-
-    string puluhan[] = {"dua puluh", "tiga puluh", "empat puluh",
-                        "lima puluh", "enam puluh", "tujuh puluh",
-                        "delapan puluh", "sembilan puluh"};
-
-    if (n < 20) {
-        return satuan[n];
-    } else if (n < 100) {
-        int p = n / 10; // untuk mencari puluhan
-        int s = n % 10; // untuk mencari satuan
-        if (s == 0)
-            return puluhan[p - 2]; // agar sesuai dengan index dari sting puluhan
-        else 
-            return puluhan[p - 2] +  " " + satuan[s]; 
-    } else if (n == 100) {
-        return "seratus";
-    } else {
-        return "Error";
-    }
+pelajaran create_pelajaran(string namapel, string kodepel) {
+    pelajaran pel;
+    pel.namaMapel = namapel;
+    pel.kodeMapel = kodepel;
+    return pel; 
 }
+
+void tampil_pelajaran(pelajaran pel) {
+cout << "nama mapel ="  << pel.namaMapel << endl;
+cout << "kode mapel = " << pel.kodeMapel << endl;
+
+}
+ 
+// main.cpp
+#include <iostream>
+#include "pelajaran.h"
+using namespace std;
 
 int main() {
-    int a;
-    cout << "Masukkan angka : ";
-    cin >> a;
-
-    if (a >= 0 && a <= 100) {
-        cout << "= " << angka(a) << endl;
-    } else {
-        cout << "Error" << endl;
-    }
-
-    return 0;
+ string namapel = "Struktur Data"; 
+ string kodepel = "STD"; 
+ pelajaran pel = create_pelajaran(namapel,kodepel); 
+ tampil_pelajaran(pel); 
+  
+ return 0;
 }
+
 
 ```
 #### Output:
@@ -151,7 +157,7 @@ Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktika
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/b0a4bd78-aa98-4ece-a9a1-01507b3a7087" />
 
 ## Kesimpulan
-Dari program diatas merupakan program dengan type data string dimana kita akan mengubah angka menejadi bilangan string dengan menggunakan bantuan array kita isi dengan huruf angka dari mulai satuan dan puluhan karena kita hanya mengubah angka dari 0-100 dan dengan bantuan operasi aritmatika yaitu pembagian untuk menggetahui puluhan atau angka awal bilangan tersebut dengan membagiya dengan angka 10 dan untuk mencari angka satuan dengan menggunakan modulus yaitu sisa pembagi dari bilangan n tapi ini jika bilangan n > 20 sampai n < 100 dan untuk f (s == 0) return puluhan[p - 2] ini jika yang dicari bilangan yang dibelakangnya nol jadi saya tulis p-2 karena agar sesuai dengan index yang sudah dibuat pada array itu index dari 0-9 jika saya tidak menuliskan dengan -2 maka program akan menghasilkan output berupa index 2 dibawahnya semisal kalo saya inputkan 20 maka outputnya 40, jadi saya -2 karena sesuai dengan index 20 yaitu index ke 0.
+Dari program diatas merupakan program dengan menggunakan ADT untuk menyimpan nama mata pelajaran dan kode mata pelajaran dalam subuah file pelajaran.h berisi deklarasi struktur dan fungsi, kemudian pelajaran.cpp berisi implementasi fungsi create_pelajaran() untuk membuat data dan tampil_pelajaran() untuk menampilkannya, sedangkan main.cpp menggunakan fungsi-fungsi tersebut untuk menampilkan informasi pelajaran.
 
 ### 3. [Soal]
 
@@ -232,8 +238,7 @@ Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktika
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/c6a168e6-e9f9-497a-8e08-cbcaaaefdb4e" />
 
 ## Kesimpulan
-Program diatas menjelaskan tentang sebuah program untuk mencetak sebuah segitiga terbalik dengan mengggunakan lopp pada lopp yang pertama akan mencetak baris sesuai dengan inputanya, Loop yang kedua untuk mencetak spasi di awal baris agar pola segitiga yang dihasilkan menjadi rata ke kanan, 
-Loop yang ketiga digunakan untuk mencetak angka secara menurun dari nilai i sampai 1, lalu meninputkan bintang dibagian tengah, lalau Loop yang keempat digunakan untuk mencetak angka secara naik dari 1 sampai i. Jadi pada program diatas menjelsakan bagaimana cara looping atau perulangan terjadi sampai terbentuk sebuah segitiga
+Program di atas merupakan program yang menggunakan array dua dimensi dan pointer untuk melakukan pertukaran data. Fungsi tampilArray digunakan untuk menampilkan isi array 3x3, fungsi tukarPosisi digunakan untuk menukarkan elemen pada posisi tertentu antara dua array, dan fungsi tukarPointer digunakan untuk menukarkan nilai dari dua variabel melalui pointer. Program ini menunjukkan penggunaan fungsi, array 2D, dan pointer.
 
 ## Referensi
 [1] A. Ma’arif, Dasar Pemrograman Bahasa C++. Yogyakarta: Universitas Ahmad Dahlan, 2022. [Online]. Available: https://eprints.uad.ac.id/32726/
