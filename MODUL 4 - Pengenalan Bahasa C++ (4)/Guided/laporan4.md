@@ -442,4 +442,4 @@ Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktika
 Penjelasan di atas adalah sebuah program dengan menggunakan single linked list, di mana program tersebut menambahkan (insert) sebuah node ke dalam list satu per satu hingga akhir, dengan menggunakan insertFirst, insertAfter, atau insertLast setiap node baru dapat ditambahkan diawal, ditengah, atau diakhir list, dan setiap node terhubung melalui pointer ke node berikutnya, kemudian Seluruh data dalam list dapat ditampilkan menggunakan fungsi printList yang akan mengoutputkan node-node yang telah dibuat. Lalu program diatas juga ada procedure untuk menghapus(delete) sebuah node pada list dengan menggunkaan delFirst, delAfter, delLast, atau deletlist, Setiap node yang terhubung dalam sebuah pointer akan terhapus sesuai dengan node yang kita inginkan.
 
 ## Referensi
-[1] P. Morin, Open Data Structures (C++ Edition). [Online]. Available: https://opendatastructures.org/ods-cpp.pdf
+[1] Trivusi, "Struktur Data — Linked List", Trivusi (blog), Jul. 2022. [Online]. Available: https://www.trivusi.web.id/2022/07/struktur-data-linked-list.html#google_vignette.
