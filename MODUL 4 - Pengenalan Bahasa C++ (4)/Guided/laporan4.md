@@ -195,7 +195,7 @@ Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktika
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/e653bf9c-c74a-4a44-8fca-cfe02818258a" />
 
 ## Kesimpulan
-Penjelasan diatas tentang sebuah program untuk menghitung nilai akhir ari data mahasiwa dengan array dan procedure. Arraynya sendiri hanya sampai 10 anak jadi apabila menginputkan lebih dari 10 maka program akan secara otomatis akan mengoutputkan 10 data saja, dengan menggunakan fungsi untuk mneghitung nlai akhir mahasiswa, lalu procedure untuk menginputkan data mahasiswa dari mulai nim, nama, nilai uts, uas, tugas.
+Penjelasan di atas adalah sebuah program dengan menggunakan single linked list, dimana program tersebut menambahkan (insert) sebuah node ke dalam list satu per satu hingga akhir, dengan menggunakan insertFirst, insertAfter, atau insertLast setiap node baru dapat ditambahkan diawal, ditengah, atau diakhir list, dan setiap node terhubung melalui pointer ke node berikutnya, kemudian Seluruh data dalam list dapat ditampilkan menggunakan fungsi printList yang akan mengoutputkan node-node yang telah dibuat.
 ### 2. [Soal]
 
 ```C++
@@ -439,7 +439,7 @@ Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktika
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/98db7c59-dfca-438b-b474-0723b29941e5" />
 
 ## Kesimpulan
-Dari program diatas merupakan program dengan menggunakan ADT untuk menyimpan nama mata pelajaran dan kode mata pelajaran dalam subuah file pelajaran.h berisi deklarasi struktur dan fungsi, kemudian pelajaran.cpp berisi implementasi fungsi create_pelajaran() untuk membuat data dan tampil_pelajaran() untuk menampilkannya, sedangkan main.cpp menggunakan fungsi-fungsi tersebut untuk menampilkan informasi pelajaran.
+Penjelasan di atas adalah sebuah program dengan menggunakan single linked list, di mana program tersebut menambahkan (insert) sebuah node ke dalam list satu per satu hingga akhir, dengan menggunakan insertFirst, insertAfter, atau insertLast setiap node baru dapat ditambahkan diawal, ditengah, atau diakhir list, dan setiap node terhubung melalui pointer ke node berikutnya, kemudian Seluruh data dalam list dapat ditampilkan menggunakan fungsi printList yang akan mengoutputkan node-node yang telah dibuat. Lalu program diatas juga ada procedure untuk menghapus(delete) sebuah node pada list dengan menggunkaan delFirst, delAfter, delLast, atau deletlist, Setiap node yang terhubung dalam sebuah pointer akan terhapus sesuai dengan node yang kita inginkan.
 
 ## Referensi
 [1] P. Morin, Open Data Structures (C++ Edition). [Online]. Available: https://opendatastructures.org/ods-cpp.pdf
