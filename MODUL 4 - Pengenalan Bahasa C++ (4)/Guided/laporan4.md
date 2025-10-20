@@ -192,7 +192,7 @@ int main() {
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
 #### Full code Screenshot:
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/e653bf9c-c74a-4a44-8fca-cfe02818258a" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/89fbb333-5152-4704-affa-d11451eb9eb1" />
 
 ## Kesimpulan
 Penjelasan di atas adalah sebuah program dengan menggunakan single linked list, dimana program tersebut menambahkan (insert) sebuah node ke dalam list satu per satu hingga akhir, dengan menggunakan insertFirst, insertAfter, atau insertLast setiap node baru dapat ditambahkan diawal, ditengah, atau diakhir list, dan setiap node terhubung melalui pointer ke node berikutnya, kemudian Seluruh data dalam list dapat ditampilkan menggunakan fungsi printList yang akan mengoutputkan node-node yang telah dibuat.
