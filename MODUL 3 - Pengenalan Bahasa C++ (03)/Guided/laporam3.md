@@ -174,11 +174,12 @@ int main() {
 
 ```
 #### Output:
-![Image](https://github.com/user-attachments/assets/14f839cf-2ac3-4d42-86cc-11dc3ca776e7)
+<img width="667" height="75" alt="Image" src="https://github.com/user-attachments/assets/7d0508dd-74b2-43a1-81dc-2b98bdc1af81" />
+
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
 #### Full code Screenshot:
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/b0a4bd78-aa98-4ece-a9a1-01507b3a7087" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/98db7c59-dfca-438b-b474-0723b29941e5" />
 
 ## Kesimpulan
 Dari program diatas merupakan program dengan menggunakan ADT untuk menyimpan nama mata pelajaran dan kode mata pelajaran dalam subuah file pelajaran.h berisi deklarasi struktur dan fungsi, kemudian pelajaran.cpp berisi implementasi fungsi create_pelajaran() untuk membuat data dan tampil_pelajaran() untuk menampilkannya, sedangkan main.cpp menggunakan fungsi-fungsi tersebut untuk menampilkan informasi pelajaran.
@@ -255,11 +256,11 @@ int main() {
 
 ```
 #### Output:
-<img width="895" height="168" alt="Image" src="https://github.com/user-attachments/assets/14bac072-b604-49f1-a3f5-9a8400aaff76" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/498e4fec-d992-4f50-8f27-2c19b155343b" />
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
 #### Full code Screenshot:
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/c6a168e6-e9f9-497a-8e08-cbcaaaefdb4e" />
+<img width="997" height="826" alt="Image" src="https://github.com/user-attachments/assets/ab1bb275-8235-4cb9-b101-b980d46db39a" />
 
 ## Kesimpulan
 Program di atas merupakan program yang menggunakan array dua dimensi dan pointer untuk melakukan pertukaran data. Fungsi tampilArray digunakan untuk menampilkan isi array 3x3, fungsi tukarPosisi digunakan untuk menukarkan elemen pada posisi tertentu antara dua array, dan fungsi tukarPointer digunakan untuk menukarkan nilai dari dua variabel melalui pointer. Program ini menunjukkan penggunaan fungsi, array 2D, dan pointer.
