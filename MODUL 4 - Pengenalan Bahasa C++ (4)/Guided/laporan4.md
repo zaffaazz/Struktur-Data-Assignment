@@ -436,7 +436,7 @@ int main() {
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
 #### Full code Screenshot:
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/98db7c59-dfca-438b-b474-0723b29941e5" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/4b33d83e-ed4f-4018-9e52-a0c607dc6601" />
 
 ## Kesimpulan
 Penjelasan di atas adalah sebuah program dengan menggunakan single linked list, di mana program tersebut menambahkan (insert) sebuah node ke dalam list satu per satu hingga akhir, dengan menggunakan insertFirst, insertAfter, atau insertLast setiap node baru dapat ditambahkan diawal, ditengah, atau diakhir list, dan setiap node terhubung melalui pointer ke node berikutnya, kemudian Seluruh data dalam list dapat ditampilkan menggunakan fungsi printList yang akan mengoutputkan node-node yang telah dibuat. Lalu program diatas juga ada procedure untuk menghapus(delete) sebuah node pada list dengan menggunkaan delFirst, delAfter, delLast, atau deletlist, Setiap node yang terhubung dalam sebuah pointer akan terhapus sesuai dengan node yang kita inginkan.
