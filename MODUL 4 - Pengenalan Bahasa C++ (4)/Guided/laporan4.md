@@ -187,12 +187,12 @@ int main() {
 ```
 #### Output:
 
-<img width="1261" height="865" alt="Image" src="https://github.com/user-attachments/assets/5102e65c-537f-430f-b879-3a428519d387" />
+<img width="526" height="82" alt="Image" src="https://github.com/user-attachments/assets/128ed43b-9ab1-4b24-83ba-f761709f2468" />
 
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
 #### Full code Screenshot:
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/e653bf9c-c74a-4a44-8fca-cfe02818258a" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/89fbb333-5152-4704-affa-d11451eb9eb1" />
 
 ## Kesimpulan
 Penjelasan di atas adalah sebuah program dengan menggunakan single linked list, dimana program tersebut menambahkan (insert) sebuah node ke dalam list satu per satu hingga akhir, dengan menggunakan insertFirst, insertAfter, atau insertLast setiap node baru dapat ditambahkan diawal, ditengah, atau diakhir list, dan setiap node terhubung melalui pointer ke node berikutnya, kemudian Seluruh data dalam list dapat ditampilkan menggunakan fungsi printList yang akan mengoutputkan node-node yang telah dibuat.
@@ -431,12 +431,12 @@ int main() {
 
 ```
 #### Output:
-<img width="667" height="75" alt="Image" src="https://github.com/user-attachments/assets/7d0508dd-74b2-43a1-81dc-2b98bdc1af81" />
+<img width="445" height="209" alt="Image" src="https://github.com/user-attachments/assets/3919cc7f-aeea-4508-ad92-58b2715e615a" />
 
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
 #### Full code Screenshot:
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/98db7c59-dfca-438b-b474-0723b29941e5" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/fa63e69f-28ec-475e-af2c-7414e7c56e9f" />
 
 ## Kesimpulan
 Penjelasan di atas adalah sebuah program dengan menggunakan single linked list, di mana program tersebut menambahkan (insert) sebuah node ke dalam list satu per satu hingga akhir, dengan menggunakan insertFirst, insertAfter, atau insertLast setiap node baru dapat ditambahkan diawal, ditengah, atau diakhir list, dan setiap node terhubung melalui pointer ke node berikutnya, kemudian Seluruh data dalam list dapat ditampilkan menggunakan fungsi printList yang akan mengoutputkan node-node yang telah dibuat. Lalu program diatas juga ada procedure untuk menghapus(delete) sebuah node pada list dengan menggunkaan delFirst, delAfter, delLast, atau deletlist, Setiap node yang terhubung dalam sebuah pointer akan terhapus sesuai dengan node yang kita inginkan.
