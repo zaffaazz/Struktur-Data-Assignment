@@ -431,7 +431,7 @@ int main() {
 
 ```
 #### Output:
-<img width="445" height="209" alt="Image" src="https://github.com/user-attachments/assets/3919cc7f-aeea-4508-ad92-58b2715e615a" />
+<img width="1241" height="756" alt="Image" src="https://github.com/user-attachments/assets/c60c4977-dc8c-4dbc-9aa0-c14c8ddd9f2b" />
 
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
