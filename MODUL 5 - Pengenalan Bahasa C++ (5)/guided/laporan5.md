@@ -478,13 +478,12 @@ int main(){
 }
 ```
 #### Output:
-
-<img width="526" height="82" alt="Image" src="https://github.com/user-attachments/assets/128ed43b-9ab1-4b24-83ba-f761709f2468" />
+<img width="445" height="209" alt="Image" src="https://github.com/user-attachments/assets/3919cc7f-aeea-4508-ad92-58b2715e615a" />
 
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
 #### Full code Screenshot:
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/89fbb333-5152-4704-affa-d11451eb9eb1" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/fa63e69f-28ec-475e-af2c-7414e7c56e9f" />
 
 ## Kesimpulan
 Penjelasan di atas merupakan sebuah program yang menggunakan struktur data Singly Linked List, di mana setiap node berisi data berupa nama baju, jumlah, dan harga yang saling terhubung melalui pointer next. Program ini dapat menambahkan (insert) node baru ke dalam list satu per satu menggunakan fungsi insertFirst, insertAfter, atau insertLast, sehingga node baru dapat ditempatkan di awal, di tengah, maupun di akhir list. Selain itu, program juga menyediakan fungsi untuk menghapus (delete) node, memperbarui (update) data node, serta mencari (searching) node berdasarkan nama atau harga. Seluruh data dalam list dapat ditampilkan menggunakan fungsi printList, yang akan menampilkan seluruh node yang telah tersimpan di dalam list secara berurutan dari awal hingga akhir.
