@@ -381,12 +381,12 @@ int main() {
 ```
 #### Output:
 
-<img width="1261" height="865" alt="Image" src="https://github.com/user-attachments/assets/5102e65c-537f-430f-b879-3a428519d387" />
+<img width="1022" height="811" alt="Image" src="https://github.com/user-attachments/assets/e5ce300f-d48c-44d4-a169-17fb7788f28e" />
 
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
 #### Full code Screenshot:
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/e653bf9c-c74a-4a44-8fca-cfe02818258a" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/4581ea62-8dbb-4114-9b81-d803bef54505" />
 
 ## Kesimpulan
 Program di atas merupakan program tentang stack dengan menggunakan array  maksimal 10 elemen.Jika pengguna memasukkan lebih dari 10 data, maka program hanya akan menyimpan 10 data teratas karena kondisi stack penuh. Program ini menggunakan fungsi untuk mengecek apakah stack kosong atau penuh, serta procedure untuk melakukan operasi seperti menambah data (push), menghapus data (pop), memperbarui data (update), menampilkan isi stack (view), dan mencari data tertentu (search).
@@ -500,12 +500,11 @@ int main() {
 
 ```
 #### Output:
-<img width="667" height="75" alt="Image" src="https://github.com/user-attachments/assets/7d0508dd-74b2-43a1-81dc-2b98bdc1af81" />
-
+<img width="998" height="228" alt="Image" src="https://github.com/user-attachments/assets/d21924f6-74be-4592-b023-293dca8ea50b" />
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
 #### Full code Screenshot:
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/98db7c59-dfca-438b-b474-0723b29941e5" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/6c996a42-5967-4a98-b621-07073bd371f7" />
 
 ## Kesimpulan
 Program di atas merupakan program stack dengan menggunakan array maksimal 10 elemen. Stack dibuat menggunakan struktur stackTable yang menyimpan data integer serta variabel top sebagai penanda posisi elemen paling atas.Jika pengguna menambahkan data lebih dari 10 elemen, maka penambahan tidak dilakukan karena kondisi stack dianggap penuh, Program ini menyediakan fungsi untuk mengecek apakah stack kosong atau penuh, serta procedure untuk melakukan operasi dasar seperti menambah elemen (push), menghapus elemen paling atas (pop), menampilkan isi stack dari atas ke bawah (printInfo), dan membalik urutan isi stack (balikStack) dengan menggunakan stack sementara. Pada fungsi main, beberapa operasi push dan pop dilakukan untuk menunjukkan cara kerja stack tersebut, kemudian ditampilkan hasilnya sebelum dan sesudah proses pembalikan data.
@@ -666,11 +665,11 @@ int main() {
 
 ```
 #### Output:
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/498e4fec-d992-4f50-8f27-2c19b155343b" />
+<img width="999" height="147" alt="Image" src="https://github.com/user-attachments/assets/76bda4d3-8f46-4b3e-a122-d2092309b408" />
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
 #### Full code Screenshot:
-<img width="997" height="826" alt="Image" src="https://github.com/user-attachments/assets/ab1bb275-8235-4cb9-b101-b980d46db39a" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/29be6d72-634d-430d-9090-82ea2376fbdd" />
 
 ## Kesimpulan
 Program di atas merupakan program stack dengan menggunakan array berkapasitas maksimal 10 elemen.Program ini menyediakan fungsi untuk mengecek apakah stack kosong atau penuh, serta procedure untuk melakukan operasi dasar seperti menambah elemen (push), menghapus elemen paling atas (pop), memperbarui data (update), menampilkan isi stack (view), mencari data tertentu (searchData), dan membalik urutan elemen dalam stack (balikStack). Program ini juga memiliki fitur pushAscending yang memungkinkan penambahan elemen secara terurut naik dengan bantuan stack sementara. Pada bagian main, beberapa data dimasukkan menggunakan metode ascending, lalu isi stack ditampilkan sebelum dan sesudah proses pembalikan.
@@ -787,11 +786,11 @@ int main() {
 }
 ```
 #### Output:
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/498e4fec-d992-4f50-8f27-2c19b155343b" />
+<img width="998" height="220" alt="Image" src="https://github.com/user-attachments/assets/2dd17dd6-e9f3-42cb-bfd4-6936c02557b1" />
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
 #### Full code Screenshot:
-<img width="997" height="826" alt="Image" src="https://github.com/user-attachments/assets/ab1bb275-8235-4cb9-b101-b980d46db39a" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/64f8825e-9efd-4a86-984f-9a7229e0381c" />
 
 ## Kesimpulan
 Program di atas merupakan program stack dengan menggunakan array berkapasitas maksimal 10 elemen. Didalamnya terdaat fungsi untuk mengecek apakah stack kosong atau penuh, serta procedure untuk melakukan operasi dasar seperti menambah elemen (push), menghapus elemen paling atas (pop), dan menampilkan isi stack dari atas ke bawah (printInfo). Program ini juga memiliki fitur balikStack yang digunakan untuk membalik urutan elemen di dalam stack dengan bantuan stack sementara. Selain itu, terdapat procedure getInputStream yang memungkinkan pengguna memasukkan angka secara langsung melalui input karakter, lalu setiap digit numeric secara otomatis dimasukkan ke dalam stack. Pada fungsi main, program membaca input angka dari user, menampilkannya dalam bentuk stack, kemudian membalik urutannya dan menampilkan hasil akhirnya.
