@@ -505,7 +505,7 @@ int main() {
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
 #### Full code Screenshot:
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/98db7c59-dfca-438b-b474-0723b29941e5" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/6c996a42-5967-4a98-b621-07073bd371f7" />
 
 ## Kesimpulan
 Program di atas merupakan program stack dengan menggunakan array maksimal 10 elemen. Stack dibuat menggunakan struktur stackTable yang menyimpan data integer serta variabel top sebagai penanda posisi elemen paling atas.Jika pengguna menambahkan data lebih dari 10 elemen, maka penambahan tidak dilakukan karena kondisi stack dianggap penuh, Program ini menyediakan fungsi untuk mengecek apakah stack kosong atau penuh, serta procedure untuk melakukan operasi dasar seperti menambah elemen (push), menghapus elemen paling atas (pop), menampilkan isi stack dari atas ke bawah (printInfo), dan membalik urutan isi stack (balikStack) dengan menggunakan stack sementara. Pada fungsi main, beberapa operasi push dan pop dilakukan untuk menunjukkan cara kerja stack tersebut, kemudian ditampilkan hasilnya sebelum dan sesudah proses pembalikan data.
