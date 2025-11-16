@@ -500,8 +500,7 @@ int main() {
 
 ```
 #### Output:
-<img width="1041" height="130" alt="Image" src="https://github.com/user-attachments/assets/6564647d-ab56-4b98-b052-71d6624cca71" />
-
+<img width="983" height="169" alt="Image" src="https://github.com/user-attachments/assets/965b40a5-8015-46e3-a14e-749cedd60c7d" />
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
 #### Full code Screenshot:
