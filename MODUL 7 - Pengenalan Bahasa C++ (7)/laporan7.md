@@ -669,7 +669,7 @@ int main() {
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
 #### Full code Screenshot:
-<img width="997" height="826" alt="Image" src="https://github.com/user-attachments/assets/ab1bb275-8235-4cb9-b101-b980d46db39a" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/29be6d72-634d-430d-9090-82ea2376fbdd" />
 
 ## Kesimpulan
 Program di atas merupakan program stack dengan menggunakan array berkapasitas maksimal 10 elemen.Program ini menyediakan fungsi untuk mengecek apakah stack kosong atau penuh, serta procedure untuk melakukan operasi dasar seperti menambah elemen (push), menghapus elemen paling atas (pop), memperbarui data (update), menampilkan isi stack (view), mencari data tertentu (searchData), dan membalik urutan elemen dalam stack (balikStack). Program ini juga memiliki fitur pushAscending yang memungkinkan penambahan elemen secara terurut naik dengan bantuan stack sementara. Pada bagian main, beberapa data dimasukkan menggunakan metode ascending, lalu isi stack ditampilkan sebelum dan sesudah proses pembalikan.
