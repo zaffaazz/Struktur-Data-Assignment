@@ -790,7 +790,7 @@ int main() {
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
 #### Full code Screenshot:
-<img width="997" height="826" alt="Image" src="https://github.com/user-attachments/assets/ab1bb275-8235-4cb9-b101-b980d46db39a" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/64f8825e-9efd-4a86-984f-9a7229e0381c" />
 
 ## Kesimpulan
 Program di atas merupakan program stack dengan menggunakan array berkapasitas maksimal 10 elemen. Didalamnya terdaat fungsi untuk mengecek apakah stack kosong atau penuh, serta procedure untuk melakukan operasi dasar seperti menambah elemen (push), menghapus elemen paling atas (pop), dan menampilkan isi stack dari atas ke bawah (printInfo). Program ini juga memiliki fitur balikStack yang digunakan untuk membalik urutan elemen di dalam stack dengan bantuan stack sementara. Selain itu, terdapat procedure getInputStream yang memungkinkan pengguna memasukkan angka secara langsung melalui input karakter, lalu setiap digit numeric secara otomatis dimasukkan ke dalam stack. Pada fungsi main, program membaca input angka dari user, menampilkannya dalam bentuk stack, kemudian membalik urutannya dan menampilkan hasil akhirnya.
