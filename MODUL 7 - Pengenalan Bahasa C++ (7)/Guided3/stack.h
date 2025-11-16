@@ -17,8 +17,10 @@ void createStack(stackTable &s);
 
 void push(stackTable &s, int angka);
 void pop(stackTable &s);
-
-void printInfo(stackTable s);
+void update(stackTable &s, int posisi);
+void view(stackTable s);
+void searchData(stackTable s, int data);
 void balikStack(stackTable &s);
+void pushAscending(stackTable &s, int angka);
 
 #endif

@@ -1,5 +1,5 @@
-#include "stack.h"
 #include <iostream>
+#include "stack.h"
 using namespace std;
 
 int main() {
@@ -17,14 +17,12 @@ int main() {
     pop(S);
     push(S, 9);
 
-    cout << "[TOP] ";
-    view(S);
+    printInfo(S);
 
     cout << "balik stack" << endl;
     balikStack(S);
 
-    cout << "[TOP] ";
-    view(S);
+    printInfo(S);
 
     return 0;
 }
