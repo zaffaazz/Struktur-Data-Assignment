@@ -7,7 +7,6 @@ int main() {
     stackBuah s;
     createStack(s);
 
-    // Push buah ke stack
     push(s, "Apel");
     push(s, "Jeruk");
     push(s, "Mangga");
@@ -19,7 +18,6 @@ int main() {
     view(s);
     cout << endl;
 
-    // Pop dua kali
     pop(s);
     pop(s);
     cout << endl;
@@ -28,17 +26,15 @@ int main() {
     view(s);
     cout << endl;
 
-    // Posisi dihitung dari TOP (1 = elemen paling atas)
     update(s, 2);
     update(s, 1);
-    update(s, 4); // contoh posisi tidak valid
+    update(s, 4); 
     cout << endl;
 
     cout << "--- Stack setelah update ---" << endl;
     view(s);
     cout << endl;
 
-    // Pencarian data
     searchData(s, "Pear");
     searchData(s, "Nanas");
 

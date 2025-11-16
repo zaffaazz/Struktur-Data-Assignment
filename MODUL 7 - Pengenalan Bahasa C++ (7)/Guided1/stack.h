@@ -13,7 +13,6 @@ bool isEmpty(stackBuah s);
 bool isFull(stackBuah s);
 void createStack(stackBuah &s);
 
-// Perbaikan tipe parameter
 void push(stackBuah &s, string buah);
 void pop(stackBuah &s);
 void update(stackBuah &s, int posisi);
