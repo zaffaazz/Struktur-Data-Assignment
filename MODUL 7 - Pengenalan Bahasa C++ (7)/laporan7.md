@@ -386,7 +386,7 @@ int main() {
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
 #### Full code Screenshot:
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/e653bf9c-c74a-4a44-8fca-cfe02818258a" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/4581ea62-8dbb-4114-9b81-d803bef54505" />
 
 ## Kesimpulan
 Program di atas merupakan program tentang stack dengan menggunakan array  maksimal 10 elemen.Jika pengguna memasukkan lebih dari 10 data, maka program hanya akan menyimpan 10 data teratas karena kondisi stack penuh. Program ini menggunakan fungsi untuk mengecek apakah stack kosong atau penuh, serta procedure untuk melakukan operasi seperti menambah data (push), menghapus data (pop), memperbarui data (update), menampilkan isi stack (view), dan mencari data tertentu (search).
