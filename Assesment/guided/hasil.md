@@ -8,5 +8,5 @@ Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktika
 <img width="1200" height="820" alt="Image" src="https://github.com/user-attachments/assets/dbbaa1c7-a918-4fb9-8a9f-5f932fac5f85" />
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 #### OutputDLL:
-<img width="1381" height="784" alt="Image" src="https://github.com/user-attachments/assets/3507f314-36f3-4b56-90b4-96b44bd384f3" />
+<img width="1205" height="342" alt="Image" src="https://github.com/user-attachments/assets/514724fb-8ac0-4538-854c-4c6b3c6a8478" />
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
