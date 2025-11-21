@@ -341,7 +341,15 @@ int main() {
 }
 
 ```
-#### Output:
+#### Output nomer 1:
+
+<img width="526" height="82" alt="Image" src="https://github.com/user-attachments/assets/128ed43b-9ab1-4b24-83ba-f761709f2468" />
+
+#### Output nomer 2:
+
+<img width="526" height="82" alt="Image" src="https://github.com/user-attachments/assets/128ed43b-9ab1-4b24-83ba-f761709f2468" />
+
+#### Output nomer 3:
 
 <img width="526" height="82" alt="Image" src="https://github.com/user-attachments/assets/128ed43b-9ab1-4b24-83ba-f761709f2468" />
 
