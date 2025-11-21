@@ -356,7 +356,7 @@ int main() {
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
 #### Full code Screenshot:
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/89fbb333-5152-4704-affa-d11451eb9eb1" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/16a02230-73d3-4cd4-aa02-fbc0a3af7908" />
 
 ## Kesimpulan
 Program di atas merupakan Program yang menggunakan Double Linked List, di mana setiap node menyimpan data kendaraan dan memiliki pointer next dan prev sehingga terhubung dua arah. Program dapat menambahkan data menggunakan insertFirst, mencari data dengan findElm, serta menghapus data menggunakan deleteFirst, deleteLast, atau deleteAfter. Setiap operasi cukup mengatur pointer antar-node tanpa perlu menggeser elemen seperti pada array. Seluruh isi list dapat ditampilkan menggunakan fungsi printInfo yang mencetak semua node dari awal hingga akhir.
