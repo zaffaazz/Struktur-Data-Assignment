@@ -343,7 +343,7 @@ int main() {
 ```
 #### Output nomer 1:
 
-<img width="526" height="82" alt="Image" src="https://github.com/user-attachments/assets/128ed43b-9ab1-4b24-83ba-f761709f2468" />
+<img width="1203" height="680" alt="Image" src="https://github.com/user-attachments/assets/3edf4532-e6ed-4090-9030-5821c3cf984e" />
 
 #### Output nomer 2:
 
