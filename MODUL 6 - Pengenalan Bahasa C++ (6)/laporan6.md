@@ -347,7 +347,7 @@ int main() {
 
 #### Output nomer 2:
 
-<img width="526" height="82" alt="Image" src="https://github.com/user-attachments/assets/128ed43b-9ab1-4b24-83ba-f761709f2468" />
+<img width="1177" height="161" alt="Image" src="https://github.com/user-attachments/assets/091e8a93-b75f-42da-bf8e-f26c8ac9cb75" />
 
 #### Output nomer 3:
 
