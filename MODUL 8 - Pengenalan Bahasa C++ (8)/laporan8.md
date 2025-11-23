@@ -148,7 +148,7 @@ void printInfo(Queue Q) {
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
 #### Full code Screenshot:
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/202143c6-a4ef-4194-ba13-cc8e0c2e9345" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/f4e8966a-c66b-412c-a17b-064099772033" />
 
 ## Kesimpulan
 Program di atas menggunakan queue berbasis array biasa, di mana data disimpan secara berurutan dan operasi penghapusan dilakukan dengan menggeser elemen maju satu posisi. Penambahan elemen dilakukan melalui enqueue, penghapusan dengan dequeue, serta pengecekan kondisi antrian menggunakan isEmptyQueue dan isFullQueue. Seluruh isi antrian dapat ditampilkan menggunakan printInfo.
@@ -231,7 +231,7 @@ void printInfo(Queue Q){
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
 #### Full code Screenshot:
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/16a02230-73d3-4cd4-aa02-fbc0a3af7908" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/202143c6-a4ef-4194-ba13-cc8e0c2e9345" />
 
 ## Kesimpulan
 Program di atas menggunakan circular queue, yaitu antrean yang memanfaatkan array melingkar sehingga elemen tidak perlu digeser saat ada penghapusan. Baik head maupun tail bergerak menggunakan operasi modulo sehingga indeks dapat kembali ke awal ketika mencapai batas array. Data dimasukkan dengan enqueue, dihapus dengan dequeue, dan kondisi antrean dicek melalui isEmptyQueue serta isFullQueue. Seluruh isi antrean dapat ditampilkan menggunakan printInfo.
