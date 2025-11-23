@@ -314,7 +314,7 @@ void printInfo(Queue Q) {
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
 #### Full code Screenshot:
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/16a02230-73d3-4cd4-aa02-fbc0a3af7908" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/ec9dcce1-9fb2-4cf9-b3d0-1b73b5ef7969" />
 
 ## Kesimpulan
 Program di atas menggunakan Queue Circular Array, yaitu proses penyisipan dan penghapusan dapat dilakukan tanpa memindahkan elemen di dalam array dan semua operasi hanya menggeser pointer head dan tail data disimpan dalam array melingkar dengan indeks head dan tail yang bergerak menggunakan operasi modulo. Data ditambahkan dengan enqueue, dihapus dengan dequeue, dan dicek kondisinya dengan isEmptyQueue serta isFullQueue serta seluruh isi antrean dapat dilihat melalui printInfo.
