@@ -226,7 +226,7 @@ void printInfo(Queue Q){
 
 #### Output:
 
-<img width="1177" height="161" alt="Image" src="https://github.com/user-attachments/assets/091e8a93-b75f-42da-bf8e-f26c8ac9cb75" />
+<img width="1208" height="428" alt="Image" src="https://github.com/user-attachments/assets/6ab486e9-32cb-49a6-817d-2d222185b265" />
 
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
