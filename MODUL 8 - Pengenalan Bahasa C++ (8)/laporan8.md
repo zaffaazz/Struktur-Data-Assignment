@@ -148,7 +148,7 @@ void printInfo(Queue Q) {
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
 #### Full code Screenshot:
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/16a02230-73d3-4cd4-aa02-fbc0a3af7908" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/d2977346-78e0-4b8d-a996-e8d735612cca" />
 
 ## Kesimpulan
 Program di atas menggunakan queue berbasis array biasa, di mana data disimpan secara berurutan dan operasi penghapusan dilakukan dengan menggeser elemen maju satu posisi. Penambahan elemen dilakukan melalui enqueue, penghapusan dengan dequeue, serta pengecekan kondisi antrian menggunakan isEmptyQueue dan isFullQueue. Seluruh isi antrian dapat ditampilkan menggunakan printInfo.
