@@ -2,7 +2,7 @@
 <p align="center">Zaffa Azzahra </p>
 
 ## Dasar Teori
-Double Linked List adalah struktur data dinamis yang terdiri dari node-node yang menyimpan data serta pointer ke node sebelumnya dan node berikutnya, di mana node pertama memiliki prev = NULL dan node terakhir memiliki next = NULL. Struktur ini memungkinkan operasi penambahan (insert) dan penghapusan (delete) dilakukan dengan lebih mudah karena cukup mengatur pointer tanpa perlu menggeser elemen seperti pada array.
+Queue atau dalam bahasa Indonesia yang berarti antrean adalah struktur data yang menyusun elemen-elemen data dalam urutan linier. Prinsip dasar dari struktur data ini adalah “First In, First Out” (FIFO) yang berarti elemen data yang pertama dimasukkan ke dalam antrean akan menjadi yang pertama pula untuk dikeluarkan.
 ## Ungided
 
 ### 1. [QUEUE]
@@ -143,12 +143,12 @@ void printInfo(Queue Q) {
 ```
 #### Output :
 
-<img width="1206" height="393" alt="Image" src="https://github.com/user-attachments/assets/3885654e-5ad5-47e8-b5d4-78717555c9bd" />
+<img width="1203" height="680" alt="Image" src="https://github.com/user-attachments/assets/3edf4532-e6ed-4090-9030-5821c3cf984e" />
 
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
 #### Full code Screenshot:
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/f4e8966a-c66b-412c-a17b-064099772033" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/16a02230-73d3-4cd4-aa02-fbc0a3af7908" />
 
 ## Kesimpulan
 Program di atas menggunakan queue berbasis array biasa, di mana data disimpan secara berurutan dan operasi penghapusan dilakukan dengan menggeser elemen maju satu posisi. Penambahan elemen dilakukan melalui enqueue, penghapusan dengan dequeue, serta pengecekan kondisi antrian menggunakan isEmptyQueue dan isFullQueue. Seluruh isi antrian dapat ditampilkan menggunakan printInfo.
@@ -226,12 +226,12 @@ void printInfo(Queue Q){
 
 #### Output:
 
-<img width="1208" height="428" alt="Image" src="https://github.com/user-attachments/assets/6ab486e9-32cb-49a6-817d-2d222185b265" />
+<img width="1177" height="161" alt="Image" src="https://github.com/user-attachments/assets/091e8a93-b75f-42da-bf8e-f26c8ac9cb75" />
 
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
 #### Full code Screenshot:
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/202143c6-a4ef-4194-ba13-cc8e0c2e9345" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/16a02230-73d3-4cd4-aa02-fbc0a3af7908" />
 
 ## Kesimpulan
 Program di atas menggunakan circular queue, yaitu antrean yang memanfaatkan array melingkar sehingga elemen tidak perlu digeser saat ada penghapusan. Baik head maupun tail bergerak menggunakan operasi modulo sehingga indeks dapat kembali ke awal ketika mencapai batas array. Data dimasukkan dengan enqueue, dihapus dengan dequeue, dan kondisi antrean dicek melalui isEmptyQueue serta isFullQueue. Seluruh isi antrean dapat ditampilkan menggunakan printInfo.
@@ -309,15 +309,15 @@ void printInfo(Queue Q) {
 ```
 #### Output :
 
-<img width="1207" height="498" alt="Image" src="https://github.com/user-attachments/assets/bb655cd3-1e4a-45c9-9859-7d58bd8be839" />
+<img width="1184" height="372" alt="Image" src="https://github.com/user-attachments/assets/91c79cd7-0136-41f7-aa1b-da68f5710ca5" />
 
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
 #### Full code Screenshot:
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/ec9dcce1-9fb2-4cf9-b3d0-1b73b5ef7969" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/16a02230-73d3-4cd4-aa02-fbc0a3af7908" />
 
 ## Kesimpulan
 Program di atas menggunakan Queue Circular Array, yaitu proses penyisipan dan penghapusan dapat dilakukan tanpa memindahkan elemen di dalam array dan semua operasi hanya menggeser pointer head dan tail data disimpan dalam array melingkar dengan indeks head dan tail yang bergerak menggunakan operasi modulo. Data ditambahkan dengan enqueue, dihapus dengan dequeue, dan dicek kondisinya dengan isEmptyQueue serta isFullQueue serta seluruh isi antrean dapat dilihat melalui printInfo.
 
 ## Referensi
-[1] Programiz, “Doubly Linked List (With code)”, Programiz. [Online]. Available: https://www.programiz.com/dsa/doubly-linked-list
+[1] Dicoding, “Struktur Data Queue: Pengertian, Fungsi dan Jenis-jenisnya”, Dicoding Blog. [Online]. Available: https://www.dicoding.com/blog/struktur-data-queue-pengertian-fungsi-dan-jenisnya/
