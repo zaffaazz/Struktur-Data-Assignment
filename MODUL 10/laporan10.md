@@ -470,7 +470,7 @@ int main() {
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
 #### Full code Screenshot:
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/16a02230-73d3-4cd4-aa02-fbc0a3af7908" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/b90e3cf8-8f47-4bc0-9b96-7ed8c6c2d3cb" />
 
 ## Kesimpulan
 Program di atas menggunakan Binary Search Tree (BST) untuk menyimpan data dalam bentuk node yang saling terhubung, di mana setiap node dapat memiliki anak kiri dan kanan dan data dinputkan dalam sebuah tree menggunakan fungsi insertNode(), Program ini juga menyediakan tiga metode traversal, yaitu InOrder, PreOrder, dan PostOrder, sehingga data dapat ditampilkan sesuai urutan yang diinginkan. Selain itu, program juga mampu menghitung jumlah node dalam tree menggunakan fungsi hitungNode(), menjumlahkan seluruh nilai yang tersimpan melalui hitungTotalInfo(), serta menentukan kedalaman atau tinggi tree menggunakan hitungKedalaman(). Dengan demikian, program ini tidak hanya menampilkan isi tree, tetapi juga memberikan informasi mengenai anatomi pada sebuah tree di dalamnya.
