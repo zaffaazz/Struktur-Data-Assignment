@@ -363,4 +363,4 @@ Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktika
 Program di atas menggunakan circular linked list, di mana setiap node saling terhubung membentuk lingkaran sehingga node terakhir menunjuk kembali ke node pertama. Penambahan data dilakukan menggunakan insertFirst, insertLast, dan insertAfter, sedangkan penghapusan dilakukan melalui deleteFirst, deleteLast, dan deleteAfter. Pencarian data dapat dilakukan dengan findElm, dan seluruh isi list dapat ditampilkan menggunakan printInfo.
 
 ## Referensi
-[1] Dicoding, “Struktur Data Queue: Pengertian, Fungsi dan Jenis-jenisnya”, Dicoding Blog. [Online]. Available: https://www.dicoding.com/blog/struktur-data-queue-pengertian-fungsi-dan-jenisnya/
+[1] GeeksforGeeks, “Introduction to Multi Linked List,” GeeksforGeeks Blog. [Online]. Available: https://www.geeksforgeeks.org/dsa/introduction-to-multi-linked-list/
