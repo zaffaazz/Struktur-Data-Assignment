@@ -2,142 +2,351 @@
 <p align="center">Zaffa Azzahra </p>
 
 ## Dasar Teori
-Queue atau dalam bahasa Indonesia yang berarti antrean adalah struktur data yang menyusun elemen-elemen data dalam urutan linier. Prinsip dasar dari struktur data ini adalah “First In, First Out” (FIFO) yang berarti elemen data yang pertama dimasukkan ke dalam antrean akan menjadi yang pertama pula untuk dikeluarkan.
-## Ungided
+Multi-Linked List (MLL) adalah struktur data di mana setiap node dapat memiliki lebih dari satu pointer (bukan hanya satu next), sehingga memungkinkan satu elemen data terhubung ke banyak elemen lain melalui beberapa jalur
+## quided
 
-### 1. [QUEUE]
+### 1. [MLL]
 
 ```C++
-#include "queue.h"
+#include "mll.h"
+#include <iostream>
+
 using namespace std;
 
-void CreateQueue(queue &Q) {
-    Q.head = nullptr;
-    Q.tail = nullptr;
+int main() {
+    // 1. Inisialisasi List
+    listInduk L;
+    createListInduk(L);
+    cout << "=== MENU RESTORAN DIBUAT ===" << endl << endl;
+
+    // 2. Membuat Data Parent (Kategori Makanan)
+    // Kita simpan pointer-nya agar mudah memasukkan anak nanti
+    NodeParent Kat1 = alokasiNodeParent("K01", "Makanan Berat");
+    insertFirstParent(L, Kat1);
+
+    NodeParent Kat2 = alokasiNodeParent("K02", "Minuman");
+    insertAfterParent(L, Kat2, Kat1);
+
+    NodeParent Kat3 = alokasiNodeParent("K03", "Dessert");
+    insertLastParent(L, Kat3);
+    
+    cout << endl;
+
+    // 3. Memasukkan Data Child (Menu Makanan) ke Kategori Tertentu
+    
+    // --> Isi Kategori Makanan Berat (K01)
+    NodeChild Mkn1 = alokasiNodeChild("M01", "Nasi Goreng Spesial", 25000);
+    insertFirstChild(Kat1->L_Anak, Mkn1);
+
+    NodeChild Mkn2 = alokasiNodeChild("M02", "Ayam Bakar Madu", 30000);
+    insertLastChild(Kat1->L_Anak, Mkn2);
+
+    // --> Isi Kategori Minuman (K02)
+    NodeChild Min1 = alokasiNodeChild("D01", "Es Teh Manis", 5000);
+    insertLastChild(Kat2->L_Anak, Min1);
+    
+    NodeChild Min2 = alokasiNodeChild("D02", "Jus Alpukat", 15000);
+    insertFirstChild(Kat2->L_Anak, Min2);
+
+    // --> Isi Kategori Dessert (K03)
+    NodeChild Des1 = alokasiNodeChild("S01", "Puding Coklat", 10000);
+    insertLastChild(Kat3->L_Anak, Des1);
+    cout << endl;
+
+    cout << "=== TAMPILAN AWAL MENU ===" << endl;
+    printStrukturMLL(L);
+    cout << endl;
+
+    // 4. Test Pencarian (Find)
+    cout << "=== TEST PENCARIAN ===" << endl;
+    findParentByID(L, "K02"); // Cari Kategori Minuman
+    cout << "---------------------------" << endl;
+    findChildByID(L, "M01");  // Cari Nasi Goreng
+    cout << "---------------------------" << endl;
+    findChildByID(L, "X99");  // Cari data ngawur (harus not found)
+    cout << "---------------------------" << endl;
+    cout << endl;
+
+    // 5. Test Update Data
+    cout << "=== TEST UPDATE ===" << endl;
+    // Update Nama Kategori (Parent)
+    // Mengubah "Dessert" menjadi "Makanan Penutup"
+    updateDataParentByID(L, "K03", "Makanan Penutup");
+    cout << "---------------------------" << endl;
+    
+    // Update Data Makanan (Child)
+    // Mengubah "Nasi Goreng Spesial" jadi "Nasgor Gila", harga naik jadi 28000
+    updateDataChildByID(L, "M01", "Nasgor Gila", 28000);
+    cout << "---------------------------" << endl;
+    
+    cout << "\n=== SETELAH UPDATE ===" << endl;
+    // Kita cek apakah data berubah
+    printListInduk(L); // Cek nama kategori saja
+    cout << endl;
+    printListAnak(L, Kat1); // Cek list anak di kategori 1
+    cout << endl;
+
+    // 6. Test Penghapusan (Delete)
+    cout << "=== TEST DELETE ===" << endl;
+    
+    // Hapus Child: Hapus Jus Alpukat (D02) dari Minuman
+    cout << "> Menghapus Child D02..." << endl;
+    deleteFirstChild(Kat2->L_Anak); 
+    
+    // Hapus Parent: Hapus Kategori Dessert/Makanan Penutup (K03)
+    // DeleteLastParent akan menghapus elemen terakhir (K03)
+    cout << "> Menghapus Parent Terakhir (K03)..." << endl;
+    deleteLastParent(L); 
+
+    cout << "\n=== TAMPILAN AKHIR MENU ===" << endl;
+    printStrukturMLL(L);
+
+    return 0;
 }
-
-bool isEmpty(queue Q) {
-    return Q.head == nullptr;
-}
-
-bool isFull(queue) {
-    return false;
-}
-
-void enQueue(queue &Q, const string &nama) {
-    Node* baru = new Node{nama, nullptr};
-    if (isEmpty(Q)) {
-        Q.head = Q.tail = baru;
-    } else {
-        Q.tail->next = baru;
-        Q.tail = baru;
-    }
-    cout << "nama " << nama << " berhasil ditambahkan kedalam queue!" << endl;
-}
-
-void deQueue(queue &Q) {
-    if (isEmpty(Q)) {
-        cout << "Queue kosong!" << endl;
-        return;
-    }
-    Node* hapus = Q.head;
-    cout << "Menghapus data " << hapus->nama << "..." << endl;
-    Q.head = Q.head->next;
-    if (Q.head == nullptr) {
-        Q.tail = nullptr;
-    }
-    delete hapus;
-}
-
-void viewQueue(queue Q) {
-    if (isEmpty(Q)) {
-        cout << "Queue kosong!" << endl;
-        return;
-    }
-    int i = 1;
-    for (Node* p = Q.head; p != nullptr; p = p->next) {
-        cout << i++ << ". " << p->nama << endl;
-    }
-}
-
-void clearQueue(queue &Q) {
-    while (!isEmpty(Q)) {
-        deQueue(Q);
-    }
-}
-
-
 Kode di atas digunakan untuk mencetak teks "ini adalah file code uguided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
-## Guided
+## Unquided
 
 ### 1. [Soal]
 
 ```C++
-// queue.cpp
-#include "queue.h"
+// circularlist.h
+#ifndef CIRCULARLIST_H
+#define CIRCULARLIST_H
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+struct infotype {
+    string Nama;
+    string Nim;
+    char Jenis_kelamin;
+    float Ipk;
+};
+
+struct ElmList;
+typedef ElmList* address;
+
+struct ElmList {
+    infotype info;
+    address next;
+};
+
+struct List {
+    address First;
+};
+
+void createList(List &L);
+address alokasi(infotype x);
+void dealokasi(address &P);
+
+void insertFirst(List &L, address P);
+void insertAfter(List &L, address Prec, address P);
+void insertLast(List &L, address P);
+
+void deleteFirst(List &L, address &P);
+void deleteAfter(List &L, address Prec, address &P);
+void deleteLast(List &L, address &P);
+
+address findElm(List L, infotype x);
+void printInfo(List L);
+
+#endif
+// circularlist.cpp
+#include "circularlist.h"
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+void createList(List &L) {
+    L.First = NULL;
+}
+
+address alokasi(infotype x) {
+    address P = new ElmList;
+    P->info = x;
+    P->next = NULL;
+    return P;
+}
+
+void dealokasi(address &P) {
+    delete P;
+    P = NULL;
+}
+
+void insertFirst(List &L, address P) {
+    if (L.First == NULL) {
+        L.First = P;
+        P->next = P;  
+    } else {
+        address last = L.First;
+        while (last->next != L.First) {
+            last = last->next;
+        }
+        P->next = L.First;
+        last->next = P;
+        L.First = P;
+    }
+}
+
+void insertAfter(List &L, address Prec, address P) {
+    if (Prec != NULL) {
+        P->next = Prec->next;
+        Prec->next = P;
+    }
+}
+
+void insertLast(List &L, address P) {
+    if (L.First == NULL) {
+        L.First = P;
+        P->next = P;
+    } else {
+        address last = L.First;
+        while (last->next != L.First) {
+            last = last->next;
+        }
+        last->next = P;
+        P->next = L.First;
+    }
+}
+
+void deleteFirst(List &L, address &P) {
+    if (L.First != NULL) {
+        address last = L.First;
+
+        while (last->next != L.First) {
+            last = last->next;
+        }
+
+        P = L.First;
+
+        if (last == L.First) {  
+            L.First = NULL;
+        } else {
+            last->next = P->next;
+            L.First = P->next;
+        }
+        P->next = NULL;
+    }
+}
+
+void deleteAfter(List &L, address Prec, address &P) {
+    if (Prec != NULL && Prec->next != L.First) {
+        P = Prec->next;
+        Prec->next = P->next;
+        P->next = NULL;
+    }
+}
+
+void deleteLast(List &L, address &P) {
+    if (L.First != NULL) {
+        address prev = NULL;
+        address last = L.First;
+
+        while (last->next != L.First) {
+            prev = last;
+            last = last->next;
+        }
+
+        P = last;
+
+        if (prev == NULL) { 
+            L.First = NULL;
+        } else {
+            prev->next = L.First;
+        }
+
+        P->next = NULL;
+    }
+}
+
+address findElm(List L, infotype x) {
+    if (L.First == NULL) return NULL;
+
+    address P = L.First;
+    do {
+        if (P->info.Nim == x.Nim) {
+            return P;
+        }
+        P = P->next;
+    } while (P != L.First);
+
+    return NULL;
+}
+
+void printInfo(List L) {
+    if (L.First == NULL) {
+        cout << "List kosong\n";
+    } else {
+        address P = L.First;
+        do {
+            cout << "Nama          : " << P->info.Nama << endl;
+            cout << "NIM           : " << P->info.Nim << endl;
+            cout << "Jenis Kelamin : " << P->info.Jenis_kelamin << endl;
+            cout << "IPK           : " << P->info.Ipk << endl;
+            cout << "          " << endl;
+           P = P->next;
+        } while (P != L.First);
+    }
+}
+// main.cpp
+#include "circularlist.h"
 #include <iostream>
 using namespace std;
 
-void createQueue(Queue &Q) {
-    Q.head = -1;
-    Q.tail = -1;
+address createData(string nama, string nim, char jenis_kelamin, float ipk) {
+    infotype x;
+    x.Nama = nama;
+    x.Nim = nim;
+    x.Jenis_kelamin = jenis_kelamin;
+    x.Ipk = ipk;
+    return alokasi(x);
 }
 
-bool isEmptyQueue(Queue Q) {
-    return (Q.head == -1 && Q.tail == -1);
-}
+int main() {
+    List L;
+    address P1, P2;
+    infotype x;
 
-bool isFullQueue(Queue Q) {
-    return (Q.tail == MAKSIMAL - 1);
-}
+    createList(L);
 
-void enqueue(Queue &Q, infotype x) {
-    if (isFullQueue(Q)) {
-        cout << "Queue penuh" << endl;
-    } else {
-        if (isEmptyQueue(Q)) {
-            Q.head = 0;
-            Q.tail = 0;
-        } else {
-            Q.tail++;
-        }
-        Q.info[Q.tail] = x;
-    }
-}
+    cout << "Coba insert first, last, dan after" << endl;
 
-infotype dequeue(Queue &Q) {
-    if (isEmptyQueue(Q)) {
-        cout << "Queue kosong" << endl;
-        return -1;
-    }
+    P1 = createData("Danu", "04", 'L', 4.0);
+    insertFirst(L, P1);
 
-    infotype x = Q.info[Q.head];
+    P1 = createData("Fahmi", "06", 'L', 3.45);
+    insertLast(L, P1);
 
-    for (int i = Q.head; i < Q.tail; i++) {
-        Q.info[i] = Q.info[i + 1];
-    }
-    Q.tail--;
+    P1 = createData("Bobi", "02", 'L', 3.71);
+    insertFirst(L, P1);
 
-    if (Q.tail < 0) {
-        Q.head = Q.tail = -1;
-    }
+    P1 = createData("Ali", "01", 'L', 3.3);
+    insertFirst(L, P1);
 
-    return x;
-}
+    P1 = createData("Gita", "07", 'P', 3.75);
+    insertLast(L, P1);
 
-void printInfo(Queue Q) {
-    cout << Q.head << " - " << Q.tail << "\t| ";
+    x.Nim = "07";
+    P1 = findElm(L, x);
+    P2 = createData("Cindi", "03", 'P', 3.5);
+    insertAfter(L, P1, P2);
 
-    if (isEmptyQueue(Q)) {
-        cout << "empty queue" << endl;
-        return;
-    }
+    x.Nim = "02";
+    P1 = findElm(L, x);
+    P2 = createData("Hilmi", "08", 'P', 3.3);
+    insertAfter(L, P1, P2);
 
-    for (int i = Q.head; i <= Q.tail; i++) {
-        cout << Q.info[i] << " ";
-    }
-    cout << endl;
+    x.Nim = "04";
+    P1 = findElm(L, x);
+    P2 = createData("Eli", "05", 'P', 3.4);
+    insertAfter(L, P1, P2);
+
+    printInfo(L);
+
+    return 0;
 }
 
 ```
@@ -151,173 +360,7 @@ Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktika
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/16a02230-73d3-4cd4-aa02-fbc0a3af7908" />
 
 ## Kesimpulan
-Program di atas menggunakan queue berbasis array biasa, di mana data disimpan secara berurutan dan operasi penghapusan dilakukan dengan menggeser elemen maju satu posisi. Penambahan elemen dilakukan melalui enqueue, penghapusan dengan dequeue, serta pengecekan kondisi antrian menggunakan isEmptyQueue dan isFullQueue. Seluruh isi antrian dapat ditampilkan menggunakan printInfo.
-
-### 2. [Soal]
-
-```C++
-// queue2.cpp
-#include "queue2.h"
-#include <iostream>
-using namespace std;
-
-void createQueue(Queue &Q){
-    Q.head = -1;
-    Q.tail = -1;
-}
-
-bool isEmptyQueue(Queue Q){
-    return (Q.head == -1);
-}
-
-bool isFullQueue(Queue Q){
-    return ((Q.tail + 1) % MAKSIMAL == Q.head);
-}
-
-void enqueue(Queue &Q, infotype x){
-    if(isFullQueue(Q)){
-        cout << "Queue penuh\n";
-    } else {
-        if(isEmptyQueue(Q)){
-            Q.head = 0;
-            Q.tail = 0;
-        } else {
-            Q.tail = (Q.tail + 1) % MAKSIMAL;
-        }
-        Q.info[Q.tail] = x;
-    }
-}
-
-infotype dequeue(Queue &Q){
-    if(isEmptyQueue(Q)){
-        cout << "Queue kosong\n";
-        return -1;
-    }
-
-    infotype x = Q.info[Q.head];
-
-    if(Q.head == Q.tail){
-        Q.head = Q.tail = -1;
-    } else {
-        Q.head = (Q.head + 1) % MAKSIMAL;
-    }
-
-    return x;
-}
-
-void printInfo(Queue Q){
-    cout << Q.head << " - " << Q.tail << "\t| ";
-
-    if(isEmptyQueue(Q)){
-        cout << "empty queue\n";
-        return;
-    }
-
-    int i = Q.head;
-    while(true){
-        cout << Q.info[i] << " ";
-        if(i == Q.tail) break;
-        i = (i + 1) % MAKSIMAL;
-    }
-    cout << endl;
-}
-
-```
-
-#### Output:
-
-<img width="1177" height="161" alt="Image" src="https://github.com/user-attachments/assets/091e8a93-b75f-42da-bf8e-f26c8ac9cb75" />
-
-Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
-
-#### Full code Screenshot:
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/16a02230-73d3-4cd4-aa02-fbc0a3af7908" />
-
-## Kesimpulan
-Program di atas menggunakan circular queue, yaitu antrean yang memanfaatkan array melingkar sehingga elemen tidak perlu digeser saat ada penghapusan. Baik head maupun tail bergerak menggunakan operasi modulo sehingga indeks dapat kembali ke awal ketika mencapai batas array. Data dimasukkan dengan enqueue, dihapus dengan dequeue, dan kondisi antrean dicek melalui isEmptyQueue serta isFullQueue. Seluruh isi antrean dapat ditampilkan menggunakan printInfo.
-
-### 3. [Soal]
-
-```C++
-// main.cpp
-#include "queue3.h"
-#include <iostream>
-using namespace std;
-
-void createQueue(Queue &Q) {
-    Q.head = -1;
-    Q.tail = -1;
-}
-
-bool isEmptyQueue(Queue Q) {
-    return (Q.head == -1);
-}
-
-bool isFullQueue(Queue Q) {
-    return ((Q.tail + 1) % MAKSIMAL == Q.head);
-}
-
-void enqueue(Queue &Q, int x) {
-    if(isFullQueue(Q)) {
-        cout << "Queue penuh\n";
-        return;
-    }
-
-    if(isEmptyQueue(Q)) {
-        Q.head = Q.tail = 0;
-    } else {
-        Q.tail = (Q.tail + 1) % MAKSIMAL;
-    }
-
-    Q.info[Q.tail] = x;
-}
-
-int dequeue(Queue &Q) {
-    if(isEmptyQueue(Q)) {
-        cout << "Queue kosong\n";
-        return -1;
-    }
-
-    int x = Q.info[Q.head];
-
-    if(Q.head == Q.tail) {
-        Q.head = Q.tail = -1;
-    } else {
-        Q.head = (Q.head + 1) % MAKSIMAL;
-    }
-
-    return x;
-}
-
-void printInfo(Queue Q) {
-    cout << Q.head << " - " << Q.tail << "\t| ";
-
-    if(isEmptyQueue(Q)) {
-        cout << "empty queue\n";
-        return;
-    }
-
-    int i = Q.head;
-    while(true) {
-        cout << Q.info[i] << " ";
-        if(i == Q.tail) break;
-        i = (i + 1) % MAKSIMAL;
-    }
-    cout << endl;
-}
-
-```
-#### Output :
-
-<img width="1184" height="372" alt="Image" src="https://github.com/user-attachments/assets/91c79cd7-0136-41f7-aa1b-da68f5710ca5" />
-
-Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
-
-#### Full code Screenshot:
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/16a02230-73d3-4cd4-aa02-fbc0a3af7908" />
-
-## Kesimpulan
-Program di atas menggunakan Queue Circular Array, yaitu proses penyisipan dan penghapusan dapat dilakukan tanpa memindahkan elemen di dalam array dan semua operasi hanya menggeser pointer head dan tail data disimpan dalam array melingkar dengan indeks head dan tail yang bergerak menggunakan operasi modulo. Data ditambahkan dengan enqueue, dihapus dengan dequeue, dan dicek kondisinya dengan isEmptyQueue serta isFullQueue serta seluruh isi antrean dapat dilihat melalui printInfo.
+Program di atas menggunakan circular linked list, di mana setiap node saling terhubung membentuk lingkaran sehingga node terakhir menunjuk kembali ke node pertama. Penambahan data dilakukan menggunakan insertFirst, insertLast, dan insertAfter, sedangkan penghapusan dilakukan melalui deleteFirst, deleteLast, dan deleteAfter. Pencarian data dapat dilakukan dengan findElm, dan seluruh isi list dapat ditampilkan menggunakan printInfo.
 
 ## Referensi
 [1] Dicoding, “Struktur Data Queue: Pengertian, Fungsi dan Jenis-jenisnya”, Dicoding Blog. [Online]. Available: https://www.dicoding.com/blog/struktur-data-queue-pengertian-fungsi-dan-jenisnya/
