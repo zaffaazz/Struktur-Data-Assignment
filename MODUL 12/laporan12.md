@@ -1,4 +1,4 @@
-# <h1 align="center">Laporan Praktikum Modul Pengenalan Bahasa C++ (1)</h1>
+# <h1 align="center">Laporan Praktikum Modul Pengenalan Bahasa C++ (12)</h1>
 <p align="center">Zaffa Azzahra </p>
 
 ## Dasar Teori
@@ -352,15 +352,15 @@ int main() {
 ```
 #### Output :
 
-<img width="1203" height="680" alt="Image" src="https://github.com/user-attachments/assets/3edf4532-e6ed-4090-9030-5821c3cf984e" />
+<img width="1264" height="830" alt="Screenshot 2025-12-10 214309" src="https://github.com/user-attachments/assets/2df80b9f-517b-4864-a8ef-c0a32838452a" />
 
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
 #### Full code Screenshot:
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/16a02230-73d3-4cd4-aa02-fbc0a3af7908" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/bf000b4b-5683-4d9c-89fd-29bd08a12207" />
 
 ## Kesimpulan
 Program di atas menggunakan circular linked list, di mana setiap node saling terhubung membentuk lingkaran sehingga node terakhir menunjuk kembali ke node pertama. Penambahan data dilakukan menggunakan insertFirst, insertLast, dan insertAfter, sedangkan penghapusan dilakukan melalui deleteFirst, deleteLast, dan deleteAfter. Pencarian data dapat dilakukan dengan findElm, dan seluruh isi list dapat ditampilkan menggunakan printInfo.
 
 ## Referensi
-[1] Dicoding, “Struktur Data Queue: Pengertian, Fungsi dan Jenis-jenisnya”, Dicoding Blog. [Online]. Available: https://www.dicoding.com/blog/struktur-data-queue-pengertian-fungsi-dan-jenisnya/
+[1] GeeksforGeeks, “Introduction to Multi Linked List,” GeeksforGeeks Blog. [Online]. Available: https://www.geeksforgeeks.org/dsa/introduction-to-multi-linked-list/
