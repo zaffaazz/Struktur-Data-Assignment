@@ -352,12 +352,12 @@ int main() {
 ```
 #### Output :
 
-<img width="1264" height="830" alt="Screenshot 2025-12-10 214309" src="https://github.com/user-attachments/assets/2df80b9f-517b-4864-a8ef-c0a32838452a" />
+<img width="1026" height="351" alt="Image" src="https://github.com/user-attachments/assets/0c2c711b-efbc-49cb-8021-763d390dc906" />
 
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
 #### Full code Screenshot:
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/bf000b4b-5683-4d9c-89fd-29bd08a12207" />
+<img width="1866" height="946" alt="Image" src="https://github.com/user-attachments/assets/034a57bb-4b9a-41af-bf36-7b595383c03d" />
 
 ## Kesimpulan
 Program di atas menggunakan circular linked list, di mana setiap node saling terhubung membentuk lingkaran sehingga node terakhir menunjuk kembali ke node pertama. Penambahan data dilakukan menggunakan insertFirst, insertLast, dan insertAfter, sedangkan penghapusan dilakukan melalui deleteFirst, deleteLast, dan deleteAfter. Pencarian data dapat dilakukan dengan findElm, dan seluruh isi list dapat ditampilkan menggunakan printInfo.
