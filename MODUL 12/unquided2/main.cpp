@@ -1,78 +1,90 @@
-#include "mll.h"
 #include <iostream>
+#include "multilist.h"
 using namespace std;
 
 int main() {
+    listinduk L;
+    CreateList(&L);
 
-    // 1. Inisialisasi List
-    listInduk L;
-    createListInduk(L);
-    cout << "=== MENU RESTORAN DIBUAT ===\n\n";
+    int pilihan;
 
-    // 2. Membuat Data Parent (Kategori Makanan)
-    NodeParent Kat1 = alokasiNodeParent("K01", "Makanan Berat");
-    insertFirstParent(L, Kat1);
+    do {
+        cout << "\n========== MENU MULTILIST ==========\n";
+        cout << "1. Tambah Induk\n";
+        cout << "2. Tambah Anak pada Induk\n";
+        cout << "3. Hapus Induk\n";
+        cout << "4. Hapus Anak dari Induk\n";
+        cout << "5. Tampilkan List\n";
+        cout << "0. Keluar\n";
+        cout << "Pilih menu: ";
+        cin >> pilihan;
 
-    NodeParent Kat2 = alokasiNodeParent("K02", "Minuman");
-    insertAfterParent(L, Kat2, Kat1);
+        if (pilihan == 1) {
+            // Insert Induk
+            int x;
+            cout << "Masukkan nilai induk: ";
+            cin >> x;
 
-    NodeParent Kat3 = alokasiNodeParent("K03", "Dessert");
-    insertLastParent(L, Kat3);
+            address P = alokasi(x);
+            if (P != NULL) {
+                insertLast(&L, P);
+                cout << "Induk " << x << " berhasil ditambahkan.\n";
+            }
 
-    cout << endl;
+        } else if (pilihan == 2) {
+            // Insert Anak
+            int indukX, anakX;
+            cout << "Masukkan nilai induk yang akan diberi anak: ";
+            cin >> indukX;
 
-    // 3. Memasukkan Data Child ke Kategori Tertentu
+            address P = findElm(L, indukX);
+            if (P == NULL) {
+                cout << "Induk tidak ditemukan!\n";
+            } else {
+                cout << "Masukkan nilai anak: ";
+                cin >> anakX;
 
-    // Kategori Makanan Berat
-    insertFirstChild(Kat1->L_Anak, alokasiNodeChild("M01", "Nasi Goreng Spesial", 25000));
-    insertLastChild(Kat1->L_Anak, alokasiNodeChild("M02", "Ayam Bakar Madu", 30000));
+                address_anak C = alokasiAnak(anakX);
+                insertLastAnak(&(P->lanak), C);
 
-    // Kategori Minuman
-    insertLastChild(Kat2->L_Anak, alokasiNodeChild("D01", "Es Teh Manis", 5000));
-    insertFirstChild(Kat2->L_Anak, alokasiNodeChild("D02", "Jus Alpukat", 15000));
+                cout << "Anak " << anakX << " berhasil ditambahkan.\n";
+            }
 
-    // Kategori Dessert
-    insertLastChild(Kat3->L_Anak, alokasiNodeChild("S01", "Puding Coklat", 10000));
+        } else if (pilihan == 3) {
+            // Delete Induk
+            int x;
+            cout << "Masukkan nilai induk yang akan dihapus: ";
+            cin >> x;
 
-    cout << "\n=== TAMPILAN AWAL MENU ===\n";
-    printStrukturMLL(L);
-    cout << endl;
+            delP(&L, x);
+            cout << "Induk " << x << " dihapus (jika ada).\n";
 
-    // 4. Test Pencarian
-    cout << "=== TEST PENCARIAN ===\n";
-    findParentByID(L, "K02");
-    cout << "---------------------------\n";
-    findChildByID(L, "M01");
-    cout << "---------------------------\n";
-    findChildByID(L, "X99"); // Tidak ada
-    cout << "---------------------------\n\n";
+        } else if (pilihan == 4) {
+            // Delete Anak
+            int indukX, anakX;
+            cout << "Masukkan nilai induk: ";
+            cin >> indukX;
 
-    // 5. Test Update Data
-    cout << "=== TEST UPDATE ===\n";
+            address P = findElm(L, indukX);
+            if (P == NULL) {
+                cout << "Induk tidak ditemukan!\n";
+            } else {
+                cout << "Masukkan nilai anak yang ingin dihapus: ";
+                cin >> anakX;
 
-    // Update Parent
-    updateDataParentByID(L, "K03", "Makanan Penutup");
+                delPAnak(&(P->lanak), anakX);
+                cout << "Anak " << anakX << " dihapus (jika ada).\n";
+            }
 
-    // Update Child
-    updateDataChildByID(L, "M01", "Nasgor Gila", 28000);
+        } else if (pilihan == 5) {
+            // Print
+            cout << "\n=== Isi Multilist ===\n";
+            printInfo(L);
+            cout << "=====================\n";
+        }
 
-    cout << "\n=== SETELAH UPDATE ===\n";
-    printListInduk(L);
-    cout << endl;
-    printListAnak(L, Kat1);
-    cout << endl;
+    } while (pilihan != 0);
 
-    // 6. Test Hapus
-    cout << "=== TEST DELETE ===\n";
-
-    cout << "> Menghapus Child D02 pada kategori Minuman...\n";
-    deleteFirstChild(Kat2->L_Anak);
-
-    cout << "> Menghapus Parent Terakhir (K03)...\n";
-    deleteLastParent(L);
-
-    cout << "\n=== TAMPILAN AKHIR MENU ===\n";
-    printStrukturMLL(L);
-
+    cout << "Program selesai.\n";
     return 0;
 }
