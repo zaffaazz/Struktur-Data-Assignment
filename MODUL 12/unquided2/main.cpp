@@ -20,7 +20,7 @@ int main() {
         cin >> pilihan;
 
         if (pilihan == 1) {
-            // Insert Induk
+            
             int x;
             cout << "Masukkan nilai induk: ";
             cin >> x;
@@ -32,7 +32,7 @@ int main() {
             }
 
         } else if (pilihan == 2) {
-            // Insert Anak
+        
             int indukX, anakX;
             cout << "Masukkan nilai induk yang akan diberi anak: ";
             cin >> indukX;
@@ -51,7 +51,7 @@ int main() {
             }
 
         } else if (pilihan == 3) {
-            // Delete Induk
+         
             int x;
             cout << "Masukkan nilai induk yang akan dihapus: ";
             cin >> x;
@@ -60,7 +60,7 @@ int main() {
             cout << "Induk " << x << " dihapus (jika ada).\n";
 
         } else if (pilihan == 4) {
-            // Delete Anak
+            
             int indukX, anakX;
             cout << "Masukkan nilai induk: ";
             cin >> indukX;
@@ -77,7 +77,7 @@ int main() {
             }
 
         } else if (pilihan == 5) {
-            // Print
+          
             cout << "\n=== Isi Multilist ===\n";
             printInfo(L);
             cout << "=====================\n";
