@@ -125,7 +125,7 @@ int main() {
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
 #### Full code Screenshot:
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/16a02230-73d3-4cd4-aa02-fbc0a3af7908" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/6dbf5a6f-f413-47a6-9a36-d687611499f1" />
 
 ## Kesimpulan
 Program ini menerapkan ADT Graph menggunakan adjacency list untuk menyimpan hubungan antar node. Dan melakukan proses penelusuran BFS dilakukan dengan bantuan queue, dan DFS menggunakan stack atau rekursi dan juga penanda visited digunakan agar setiap node hanya dikunjungi satu kali selama traversal.
